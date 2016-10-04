@@ -1,11 +1,73 @@
-@import "buttons"
+$green: #06921c
+$blue: #0692da
+$main-color-black: #212121
+$lighter-grey: #646464
+$grey: #7f7f86
+$darker-grey: #76767b
+$red: #ef4035
+$ffMcyr: "Museo Cyrillic", serif
+$ffRob: "Roboto"
+$ffHel: "Helvetica Neue Cyr"
+
+@import _framework.sass
+@import _responsive.sass
+@import css/fonts.css
+@import mixins/_mixins.sass
 
 body
-  background: #eee
-  color: #000
+    box-sizing: border-box
 
-h1
-  font-weight: normal
+.header
+    height: 85px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: baseline
 
-p
-  background: #ccc
+.header-logo
+    display: flex
+    margin: auto
+    +sprite(logo)
+
+.header-logo-wrapper
+    height: 85px
+    padding: 20px
+    background-color: $blue //rehr
+    display: flex
+    justify-content: space-between
+    flex: 0 1 180px
+
+.header-nav
+    display: flex
+    flex: 1 1 180px
+
+.base-text
+    color: $main-color-black
+    font-family: $ffMcyr
+    font-size: 15px
+    line-height: 22px
+
+.header-nav-listing
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.header-nav__item
+    padding: 20px
+    color: $main-color-black
+    list-style: none
+    background-color: #fff
+    &:hover
+        border-bottom: 3px solid $red
+
+.header-nav__link
+    margin: auto
+    &:hover
+        color: $red
+        border-bottom: 3px solid $red
+
+.work-hours
+    font-size: 12px
+    color: $lighter-grey
+    font-family: $ffHel
+    font-weight: 400

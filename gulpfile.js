@@ -40,6 +40,9 @@ var sources = {
         watch: 'app/sass/**/*.sass',
         dist: 'app/sass'
     },
+    img: {
+        src: 'app/images'
+    },
     bower: {src: 'app/bower_components'}
 };
 
@@ -66,7 +69,7 @@ gulp.task('twig', function () {
         .pipe(callback(function () {
             gulp.src(sources.twig.temp_dist_html)
                 .pipe(htmlbeautify())
-                .pipe(gulp.dest(sources.twig.dist))
+                .pipe(gulp.dest(sources.html.dist))
                 .pipe(callback(function () {
                     setTimeout(function () {
                         gulp.src(sources.twig.temp_dist, {read: false})
@@ -87,7 +90,8 @@ gulp.task('compass', function () {
       .pipe(compass({
           sass: sources.sass.dist,
           css: sources.css.dist,
-          js: sources.js.dist
+          js: sources.js.dist,
+          image: sources.img.src
       }))
       .pipe(gulp.dest(sources.css.dist))
       .pipe(connect.reload());

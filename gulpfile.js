@@ -95,7 +95,7 @@ gulp.task('compass', function () {
 
 /* BOWER --------------------------------------------------------------------- */
 gulp.task('bower', function () {
-    gulp.src(sources.html.src)
+    gulp.src(sources.twig.watch)
         .pipe(wiredep({
             directory: sources.bower.src
         }))

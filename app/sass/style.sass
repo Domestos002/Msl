@@ -6,68 +6,110 @@ $grey: #7f7f86
 $darker-grey: #76767b
 $red: #ef4035
 $ffMcyr: "Museo Cyrillic", serif
-$ffRob: "Roboto"
-$ffHel: "Helvetica Neue Cyr"
+$ffMcyr700: "Museo Cyrl 700"
+$ffRob: "Roboto-Regular"
+$ffHel: "HelveticaNeueCyr"
+$ffHel-r: "HelveticaNeueCyr-Roman"
+$ffHel-b: "HelveticaNeueCyr-Bold_0",
+
 
 @import _framework.sass
 @import _responsive.sass
 @import css/fonts.css
 @import mixins/_mixins.sass
 
-body
-    box-sizing: border-box
+.clearfix:after
+    clear: both
+    content: ''
+    display: block
 
 .header
-    height: 85px
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: baseline
-
-.header-logo
-    display: flex
-    margin: auto
-    +sprite(logo)
-
-.header-logo-wrapper
-    height: 85px
-    padding: 20px
-    background-color: $blue //rehr
     display: flex
     justify-content: space-between
-    flex: 0 1 180px
+    align-items: stretch
+    height: 82px
 
 .header-nav
-    display: flex
-    flex: 1 1 180px
+    flex: 0 1 630px
 
-.base-text
-    color: $main-color-black
-    font-family: $ffMcyr
-    font-size: 15px
-    line-height: 22px
+    
 
-.header-nav-listing
-    display: flex
-    flex-direction: row
-    justify-content: space-between
+.header-logo-wrapper
+    padding-left: 15px
+    flex: 0 0 165px
+    background-color: $blue
+
+.header-logo
+    +sprite(logo)
+    display: inline-block
+
 
 .header-nav__item
-    padding: 20px
     color: $main-color-black
     list-style: none
+    padding: 0 20px
     background-color: #fff
+    box-sizing: border-box
+    border-bottom: 3px solid transparent
+    border-top: 3px solid transparent
     &:hover
         border-bottom: 3px solid $red
+        border-top: 3px solid transparent
 
 .header-nav__link
-    margin: auto
+    font-size: 12px
+    font-family: $ffHel-r
+    color: $main-color-black
+    text-transform: uppercase
     &:hover
-        color: $red
-        border-bottom: 3px solid $red
+        text-decoration: none
+
+.header-nav-listing
+    margin: 0
+    line-height: 76px
+    display: flex
+    justify-content: space-between
 
 .work-hours
     font-size: 12px
     color: $lighter-grey
     font-family: $ffHel
     font-weight: 400
+
+.header-phone
+    font-family: $ffMcyr700
+    color: $main-color-black
+    font-weight: 700
+    font-size: 18px
+    
+.green_btn
+    font-family: $ffHel
+    margin: auto
+    font-size: 12px
+    font-weight: 400
+    width: 179px
+    line-height: 42px
+    text-align: center
+    border-radius: 2px
+    color: #fff
+    background-color: $green
+    &:hover
+        background-color: $green*0.8
+        color: #fff
+        text-decoration: none
+
+.phone-icon
+    +sprite(phone-icon)
+    display: inline-block
+
+.page-tittle
+    color: #fff
+
+//___________________bs___________________________________
+.base-text
+    color: $main-color-black
+    font-family: $ffMcyr
+    font-size: 15px //grhr
+    line-height: 17px
+//___________________bs___________________________________
+

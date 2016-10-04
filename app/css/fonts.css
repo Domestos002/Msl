@@ -1,10 +1,43 @@
 @font-face {
     font-family: "HelveticaNeueCyr-Roman";
     src: url("../fonts/HelveticaNeueCyr-Roman.eot");
-    src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
     url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff"),
     url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"),
     url("../fonts/HelveticaNeueCyr-Roman.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyr-Bold_0";
+    src: url("../fonts/HelveticaNeueCyr-Bold_0.eot");
+    src: url("../fonts/HelveticaNeueCyr-Bold_0.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaNeueCyr-Bold_0.woff2") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Bold_0.ttf") format("truetype"),
+url("../fonts/HelveticaNeueCyr-Bold_0.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.eot");
+    src: url("../fonts/Roboto-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Roboto-Regular.woff2") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
+    /*url("../fonts/Roboto-Regular.otf");*/
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Museo Cyrl 700";
+    src: url("../fonts/Roboto-Regular.eot");
+    src: url("../fonts/Roboto-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Roboto-Regular.woff2") format("woff"),
+    url("../fonts/Museo-Cyrl-700.otf") format("truetype"),
+    url("../fonts/Museo-Cyrl-700.otf");
     font-style: normal;
     font-weight: normal;
 }

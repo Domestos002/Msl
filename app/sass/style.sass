@@ -27,7 +27,6 @@ $ffHel-b: "HelveticaNeueCyr-Bold_0"
     display: flex
     justify-content: space-between
     align-items: stretch
-    height: 82px
 
 .header-nav
     flex: 0 1 630px
@@ -102,29 +101,68 @@ $ffHel-b: "HelveticaNeueCyr-Bold_0"
     +sprite(phone-icon)
     display: inline-block
 
-.page-tittle
-    color: #fff
-    font-family: $ffHel-b
-    font-size: 53px
-
 .search-icon
-    +sprite(search_icon)
+    +sprite(search-icon)
 
 .sale-icon
     +sprite(sale-icon)
 
 .funnel-icon
-    +sprite(funnel-icon)
+    +sprite(funnel-icon) //regher
 
-//___________________bs___________________________________
+.first-screen
+    +retina-bg("first-screen.png","first-screen@2x.png")
+    background-position: 100% center
+    background-size: cover
+    background-repeat: no-repeat
+    height: 700px
+
+.first-screen-bullets
+    width: 900px
+    margin: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.empty_btn
+    border: 1px solid white
+    border-radius: 2px
+    font-family: $ffHel-r
+    font-size: 16px
+    font-weight: 400
+    line-height: 60px
+    display: inline-block
+    width: 255px
+    text-align: center
+    color: #fff
+    background-color: transparent
+    &:hover
+        background-color: $green*0.8
+        color: #fff
+        text-decoration: none
+
+.red_btn
+    @extend .empty_btn
+    background-color: $red
+    border: 1px solid transparent
+
+
+.wrapper
+    width: 900px
+//___________________text___________________________________
 .base-text
     color: $main-color-black
     font-family: $ffMcyr
     font-size: 15px //grhr
     line-height: 17px
 
+.page-title
+    color: #fff
+    font-family: $ffHel-b
+    font-size: 53px
+
 .title-rom
     font-size: 16px
 
-//___________________bs___________________________________
+//___________________endtext___________________________________
 

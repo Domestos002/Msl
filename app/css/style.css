@@ -1,103 +1,323 @@
-/*
-Error: No sprite called search_icon found in sprite map icons/icons. Did you mean one of:  beau, check, document-icon, eco-homme, fire-station, funnel-icon, logo, love-korea, malutka-market, malutka-store, marker, mobile-icon, pdf-icon, pet-simple, phone-icon, pro-copters, profit-icon, sale-icon, sand-clock-icon, search-icon, shop-icon, signal-expert, support-icon, target-icon
-        on line 24 of D:/dev/git/Msl/app/sass/mixins/_retina_sprites.sass, in `sprite'
-        from line 111 of D:/dev/git/Msl/app/sass/style.sass
+@import url(fonts.css);
+.ttu {
+  text-transform: uppercase !important;
+}
 
-19: @import mixins/_mixins.sass
-20: 
-21: .clearfix:after
-22:     clear: both
-23:     content: ''
-24:     display: block
-25: 
-26: .header
-27:     display: flex
-28:     justify-content: space-between
-29:     align-items: stretch
+.white {
+  color: #fff !important;
+}
 
-Backtrace:
-D:/dev/git/Msl/app/sass/mixins/_retina_sprites.sass:24:in `sprite'
-D:/dev/git/Msl/app/sass/style.sass:111
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/sass_extensions/functions/sprites.rb:298:in `missing_image!'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/sass_extensions/functions/sprites.rb:223:in `sprite_position'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:143:in `_perform'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:301:in `block (2 levels) in visit_if'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:301:in `map'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:301:in `block in visit_if'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:300:in `visit_if'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:366:in `block (4 levels) in visit_mixin'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:366:in `map'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:366:in `block (3 levels) in visit_mixin'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:366:in `block (2 levels) in visit_mixin'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:361:in `block in visit_mixin'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-C:/Ruby23/bin/compass:23:in `load'
-C:/Ruby23/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: No sprite called search_icon found in sprite map icons/icons. Did you mean one of:  beau, check, document-icon, eco-homme, fire-station, funnel-icon, logo, love-korea, malutka-market, malutka-store, marker, mobile-icon, pdf-icon, pet-simple, phone-icon, pro-copters, profit-icon, sale-icon, sand-clock-icon, search-icon, shop-icon, signal-expert, support-icon, target-icon\A         on line 24 of D:/dev/git/Msl/app/sass/mixins/_retina_sprites.sass, in `sprite'\A         from line 111 of D:/dev/git/Msl/app/sass/style.sass\A \A 19: @import mixins/_mixins.sass\A 20: \A 21: .clearfix:after\A 22:     clear: both\A 23:     content: ''\A 24:     display: block\A 25: \A 26: .header\A 27:     display: flex\A 28:     justify-content: space-between\A 29:     align-items: stretch"; }
+.lh17 {
+  line-height: 17px !important;
+}
+
+.ffR-r {
+  font-family: "Roboto-Regular";
+}
+
+.fz16 {
+  font-size: 16px !important;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
+.fl-baseline {
+  display: flex;
+  align-items: baseline;
+  margin: auto;
+}
+
+.fl-center {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.fl-left {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.tac {
+  text-align: center;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.header-nav {
+  flex: 0 1 630px;
+}
+
+.header-logo-wrapper {
+  padding-left: 15px;
+  flex: 0 0 165px;
+  background-color: #0692da;
+}
+
+.header-logo {
+  background-image: url('../images/icons-sb1b47d7d56.png');
+  background-position: 0 -357px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 49px;
+  width: 42px;
+  display: inline-block;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .header-logo {
+    background-image: url('../images/icons-2x-s5025ded3c9.png');
+    background-size: 162px auto;
+    background-position: 0 -357px;
+    height: 49px;
+    width: 42px;
+  }
+}
+
+.header-nav__item {
+  color: #212121;
+  list-style: none;
+  padding: 0 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+.header-nav__item:hover {
+  border-bottom: 3px solid #ef4035;
+  border-top: 3px solid transparent;
+}
+
+.header-nav__link {
+  font-size: 12px;
+  font-family: "HelveticaNeueCyr-Roman";
+  color: #212121;
+  text-transform: uppercase;
+}
+.header-nav__link:hover {
+  text-decoration: none;
+}
+
+.header-nav-listing {
+  margin: 0;
+  line-height: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-hours {
+  font-size: 12px;
+  color: #646464;
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+}
+
+.header-phone {
+  font-family: "Museo Cyrl 700";
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.green_btn {
+  font-family: "HelveticaNeueCyr";
+  margin: auto;
+  font-size: 12px;
+  font-weight: 400;
+  width: 179px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #06921c;
+}
+.green_btn:hover {
+  background-color: #057516;
+  color: #fff;
+  text-decoration: none;
+}
+
+.phone-icon {
+  background-image: url('../images/icons-sb1b47d7d56.png');
+  background-position: 0 -755px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .phone-icon {
+    background-image: url('../images/icons-2x-s5025ded3c9.png');
+    background-size: 162px auto;
+    background-position: 0 -755px;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.search-icon {
+  background-image: url('../images/icons-sb1b47d7d56.png');
+  background-position: 0 -1043px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 56px;
+  width: 56px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .search-icon {
+    background-image: url('../images/icons-2x-s5025ded3c9.png');
+    background-size: 162px auto;
+    background-position: 0 -1043px;
+    height: 56px;
+    width: 56px;
+  }
+}
+
+.sale-icon {
+  background-image: url('../images/icons-sb1b47d7d56.png');
+  background-position: 0 -907px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 65px;
+  width: 56px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .sale-icon {
+    background-image: url('../images/icons-2x-s5025ded3c9.png');
+    background-size: 162px auto;
+    background-position: 0 -907px;
+    height: 65px;
+    width: 56px;
+  }
+}
+
+.funnel-icon {
+  background-image: url('../images/icons-sb1b47d7d56.png');
+  background-position: 0 -299px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 53px;
+  width: 56px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+  .funnel-icon {
+    background-image: url('../images/icons-2x-s5025ded3c9.png');
+    background-size: 162px auto;
+    background-position: 0 -299px;
+    height: 53px;
+    width: 56px;
+  }
+}
+
+.first-screen {
+  background-image: url('../images/first-screen.png?1475567949');
+  background-position: 100% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .first-screen {
+    background-image: url('../images/first-screen@2x.png?1475584936');
+    background-size: 1280px 700px;
+  }
+}
+
+.first-screen-bullets {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.empty_btn, .red_btn {
+  border: 1px solid white;
+  border-radius: 2px;
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 60px;
+  display: inline-block;
+  width: 255px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+}
+.empty_btn:hover, .red_btn:hover {
+  background-color: #057516;
+  color: #fff;
+  text-decoration: none;
+}
+
+.red_btn {
+  background-color: #ef4035;
+  border: 1px solid transparent;
+}
+
+.wrapper {
+  width: 900px;
+}
+
+.base-text {
+  color: #212121;
+  font-family: "Museo Cyrillic", serif;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.page-title {
+  color: #fff;
+  font-family: "HelveticaNeueCyr-Bold_0";
+  font-size: 53px;
+}
+
+.title-rom {
+  font-size: 16px;
+}

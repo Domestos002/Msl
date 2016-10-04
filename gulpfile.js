@@ -33,7 +33,7 @@ var sources = {
         watch: 'app/twig/**/*.twig',
         temp_dist: 'app/twig_html/',
         temp_dist_html: 'app/twig_html/*.html',
-        dist: 'app/'
+        dist: 'app/twig/'
     },
     sass: {
         src: 'app/sass/*.sass',
@@ -99,7 +99,7 @@ gulp.task('bower', function () {
         .pipe(wiredep({
             directory: sources.bower.src
         }))
-        .pipe(gulp.dest('app'));
+        .pipe(gulp.dest(sources.twig.dist));
 });
 
 /* CONNECT ------------------------------------------------------------------- */

@@ -362,7 +362,7 @@ input:-ms-input-placeholder {
 
 .header-nav-listing {
   margin: 0;
-  line-height: 76px;
+  line-height: 100px;
   display: flex;
   justify-content: space-between;
 }

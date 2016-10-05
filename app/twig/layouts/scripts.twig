@@ -1,12 +1,21 @@
 <!-- build:js js/vendor.js-->
 <!--bower:js-->
 <script src="../../bower_components/jquery/dist/jquery.js"></script>
-<script src="../../bower_components/uikit/js/uikit.min.js"></script>
+<script src="js/input.mask.js"></script>
+<script src="../../bower_components/owlcarousel/owl-carousel/owl.carousel.js"></script>
 <!--endbower-->
 <!--endbulid-->
 <!-- build:js js/common.js-->
 <script src="js/custom.js"></script>
 <!--endbulid-->
-<!-- build:js js/common.js-->
-<script src="js/input.mask.js.js"></script>
-<!--endbulid-->
+<script>
+    $(document).ready(function() {
+        $(".b-main-slider").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            dots: true,
+            mouseDrag: true
+        });
+    });
+</script>

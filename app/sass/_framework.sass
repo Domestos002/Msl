@@ -7,9 +7,11 @@
 .lh17
     line-height: 17px !important
 
-
 .fz16
     font-size: 16px !important
+
+.fz14
+    font-size: 14px !important
 
 .fz17
     font-size: 17px !important
@@ -22,6 +24,9 @@
 
 .fz36
     font-size: 36px !important
+
+.fz33
+    font-size: 33px !important
 
 .fz24
     font-size: 24px !important
@@ -39,17 +44,41 @@
 .ffMcyr700
     font-family: $ffMcyr700 !important
 
+.ffMcyr300
+    font-family: $ffMcyr300 !important
+
 .fw700
     font-weight: 700 !important
 
 .black
     color: $main-color-black !important
 
+.lighter-grey
+    color: $lighter-grey !important
+
+.grey
+    color: $grey !important
 //___________ENDначертание и шрифты________________________
 
 
 .w100
     width: 100%
+
+.inline-grid
+    text-align: justify
+    line-height: 0
+    font-size: 0
+    &:after
+        width: 100%
+        height: 0
+        overflow: hidden
+        visibility: hidden
+        content: ''
+        display: inline-block
+    & > div
+        display: inline-block
+    //&:last-child
+        text-align: left
 //_________________________________________________________
 .mr20
     margin-right: 20px
@@ -57,8 +86,17 @@
 .mb20
     margin-bottom: 20px
 
+.mb5
+    margin-bottom: 5px
+
+.mb0
+    margin-bottom: 0
+
 .ml10
     margin-left: 10px
+
+.ml20
+    margin-left: 20px
 
 .mb40
     margin-bottom: 40px
@@ -104,6 +142,16 @@
     right: 0px
     top: -60px
     display: block
+
+.fl-grid-b
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+
+.fl-grid-a
+    display: flex
+    justify-content: space-around
+    align-items: baseline
 
 .jk-c
     justify-content: center

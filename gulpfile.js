@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     htmlbeautify = require('gulp-html-beautify'),
     callback = require('gulp-callback'),
     connect = require('gulp-connect'),
+    autoprefixer = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber');
 
 /* SOURCES --------------------------------------------------------------------
@@ -21,7 +22,12 @@ var sources = {
         src: 'app/*.html',
         dist: 'app/'
     },
-    css: {dist: 'app/css'},
+    css: {
+        dist: 'app/css',
+        src: 'app/css/*.css',
+        temp: 'app/css_temp'
+
+    },
     js: {dist: 'app/js'},
     pug: {
         src: 'app/pug/*.pug',
@@ -94,6 +100,14 @@ gulp.task('compass', function () {
           image: sources.img.src
       }))
       .pipe(gulp.dest(sources.css.dist))
+      .pipe(callback(function () {
+          gulp.src(sources.css.src)
+              .pipe(autoprefixer({
+                  browsers: ['last 5 versions'],
+                  cascade: false
+              }))
+              .pipe(gulp.dest(sources.css.dist))
+      }))
       .pipe(connect.reload());
 });
 

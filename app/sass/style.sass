@@ -21,8 +21,12 @@ $ffHel-l: "HelveticaNeueCyr-Light"
 @import fonts.css
 @import mixins/_mixins.sass
 
+body
+    font-family: $ffMcyr500
+    font-size: 14px
 
 input
+    font-family: $ffMcyr500
     +phc($grey)
     padding: 20px !important
     font-family: $ffHel-r
@@ -550,7 +554,8 @@ footer > .container > .green_btn
         right: 50%
         position: absolute
         bottom: 100%
-        +transform(translateX(50%))
+        //+transform(translateX(50%))
+        transform: translateX(50%)
         content: ""
         display: block
         background-color: $red

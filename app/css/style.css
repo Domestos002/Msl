@@ -358,7 +358,7 @@ input:-ms-input-placeholder {
   opacity: 1 !important;
 }
 
-.container {
+.container, .content__contacts {
   max-width: 1250px;
   margin: 0px auto;
 }
@@ -369,7 +369,7 @@ input:-ms-input-placeholder {
 
 .fill-form__inp {
   flex: 1 1 300px;
-  height: 50px;
+  height: 55px;
   font-size: 14px;
   font-family: "HelveticaNeueCyr-Roman";
 }
@@ -961,6 +961,7 @@ input:-ms-input-placeholder {
 
 .scheme-of-work__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -1041,28 +1042,19 @@ input:-ms-input-placeholder {
 .content__contacts {
   position: relative;
   padding-bottom: 60px;
-}
-.content__contacts:before {
-  width: 100%;
-  height: 20px;
-  position: absolute;
-  bottom: calc(100% - 20px);
-  content: "";
-  display: block;
-  background: linear-gradient(to bottom, #f7f7f7, #fff);
+  background: linear-gradient(to bottom, #f7f7f7 20px, #fff 20px);
 }
 
 .content__contacts__info {
   background-color: #fff;
-  width: calc(100% - 570px);
-  padding: 70px 10px;
+  width: 52%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .b-person {
-  flex: 0 0 530px;
+  width: 42%;
   z-index: 10;
 }
 
@@ -1672,7 +1664,7 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
 
 .get-consultation > .container {
   box-sizing: border-box;
-  padding: 75px 110px 48px 130px;
+  padding: 75px 110px 75px 130px;
 }
 
 .get-consultation-form__inp {
@@ -1719,7 +1711,24 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
 }
 
 @media screen and (max-width: 1180px) {
-  .our-projects > .container {
-    padding: 39px 25px;
+  .container {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .fill-form > .fl-grid-b {
+    flex-wrap: wrap;
+  }
+
+  .fill-form > .fl-grid-b > .fill-form__inp {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .fill-form > .fl-grid-b > .fill-form__inp:last-child {
+    margin-bottom: 0;
+  }
+
+  .scheme-of-work__item {
+    width: calc(25% - 70px);
   }
 }

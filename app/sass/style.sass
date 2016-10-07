@@ -31,7 +31,7 @@ input
     box-sizing: border-box
     border: 2px solid #ebe9e8
 
-.container
+.container, .content__contacts
     max-width: 1250px
     margin: 0px auto
 
@@ -40,7 +40,7 @@ input
 
 .fill-form__inp
     flex: 1 1 300px
-    height: 50px
+    height: 55px
     font-size: 14px
     font-family: $ffHel-r
 
@@ -385,6 +385,7 @@ input
 
 .scheme-of-work__list
     display: flex
+    flex-wrap: wrap
     justify-content: space-around
 
 .scheme-of-work__item
@@ -454,20 +455,12 @@ input
 .content__contacts
     position: relative
     padding-bottom: 60px
-    &:before
-        width: 100%
-        height: 20px
-        position: absolute
-        bottom: calc(100% - 20px)
-        content: ''
-        display: block
-        background: linear-gradient(to bottom, #f7f7f7, #fff)
+    background: linear-gradient(to bottom, #f7f7f7 20px, #fff 20px)
 
 
 .content__contacts__info
     background-color: #fff
-    width: calc(100% - 570px)
-    padding: 70px 10px
+    width: 52%
     //padding: 0 70px
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
@@ -475,7 +468,7 @@ input
 
 
 .b-person
-    flex: 0 0 530px
+    width: 42%
     z-index: 10
 
 .b-our-project-image
@@ -792,7 +785,7 @@ footer > .container > .green_btn
 
 .get-consultation >.container
     box-sizing: border-box
-    padding: 75px 110px 48px 130px
+    padding: 75px 110px 75px 130px
 
 .get-consultation-form__inp
     font-family: $ffHel-r

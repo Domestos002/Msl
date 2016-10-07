@@ -24,7 +24,8 @@ $ffHel-l: "HelveticaNeueCyr-Light"
 
 input
     +phc($grey)
-    padding: 20px
+    padding: 20px !important
+    font-family: $ffHel-r
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
     box-sizing: border-box
@@ -33,6 +34,8 @@ input
 .fill-form__inp
     flex: 1 1 300px
     height: 50px
+    font-size: 14px
+    font-family: $ffHel-r
 
 //___________________text___________________________________
 .base-text
@@ -102,7 +105,7 @@ input
     align-items: stretch
 
 .header-nav
-    flex: 0 1 630px
+    flex: 1 1 500px
 
     
 
@@ -117,30 +120,34 @@ input
 
 
 .header-nav__item
-    color: $main-color-black
     list-style: none
-    padding: 0 20px
     background-color: #fff
     box-sizing: border-box
     border-bottom: 3px solid transparent
     border-top: 3px solid transparent
     &:hover
         border-bottom: 3px solid $red
-        border-top: 3px solid transparent
+        text-decoration: none
+        color: $red
 
-.header-nav__link
     font-size: 12px
     font-family: $ffHel-r
+    padding: 0 20px
+    text-decoration: none
     color: $main-color-black
     text-transform: uppercase
-    &:hover
-        text-decoration: none
 
 .header-nav-listing
     margin: 0
-    line-height: 100px
+    line-height: 74px
     display: flex
-    justify-content: space-between
+    justify-content: space-around
+
+.header-nav__right
+    flex: 1 1 445px
+    display: flex
+    align-self: center
+    justify-content: space-around
 
 .work-hours
     font-size: 12px
@@ -189,6 +196,10 @@ input
 
 .first-screen-bullets__item
     text-align: center
+    margin-right: 60px
+    &:last-child
+        margin-right: 0
+
 
 .first-screen
     +retina-bg("first-screen.png","first-screen@2x.png")
@@ -196,7 +207,7 @@ input
     background-size: cover
     background-repeat: no-repeat
     & > .container
-        padding: 135px 175px
+        padding: 135px 160px
 
 
 .first-screen-bullets
@@ -217,7 +228,7 @@ input
     color: #fff
     background-color: transparent
     &:hover
-        background-color: $green*0.8
+        background-color: $lighter-grey*0.4
         color: #fff
         text-decoration: none
 
@@ -225,10 +236,14 @@ input
     @extend .empty_btn
     background-color: $red
     border: 1px solid transparent
+    &:hover
+        background-color: $red*0.8
+
 
 
 .wrapper
-    width: 900px
+    max-width: 680px
+    margin: auto
 
 .advantages-list
     padding: 75px
@@ -249,14 +264,27 @@ input
     background-color: $blue
 
 .w-circle
-    display: inline-block
+    display: flex
     width: 70px
     height: 70px
+    content: ''
+    border-radius: 50%
+    top: calc(100% - 23px)
+    right: calc(50% - 35px)
+    position: absolute
     background-color: #fff
     &:after
-        width: 44px
-        height: 44px
-        border: 1px solid $red //ARROW
+        margin: auto
+        content: ''
+        display: block
+        margin-bottom: 40px
+        z-index: 10
+        width: 13px
+        height: 13px
+        border: 2px solid transparent
+        border-bottom: 2px solid $red
+        border-left: 2px solid $red
+        transform: rotate(-45deg)
         
 .you-get
     background-color: $darker-white
@@ -382,13 +410,37 @@ input
     line-height: 22px
     background-color: #fff
     margin-bottom: 30px
-    &:hover
-        background-color: $blue
-        color: #fff
+    &.lllast
+        width: 280px
+        &:before
+            content: ""
+            position: absolute
+            display: block
+            top: 20px
+            right: 0
+            left: 0
+            bottom: 0
+            background-color: $blue
+            color: #fff
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            right: calc(50% - 27px)
+            bottom: calc(100% - 50px)
+            background-color: $blue
+            width: 57px
+            height: 57px
+            border-radius: 50%
 
 .scheme-of-work-icon
     margin-bottom: 20px
     height: 65px
+
+.scheme-of-work__item__list
+    list-style-position: inside
+    list-style-type: disc
+    display: inline-block
 
 .scheme-of-work >.container
     padding: 85px 54px
@@ -440,7 +492,7 @@ input
     display: inline-block
 
 .footer-item
-    width: 21.25%
+    width: 24.25%
     margin: auto
     position: relative
 
@@ -657,6 +709,7 @@ footer > .container > .green_btn
         width: 72px
         background-color: $red
         margin-top: 30px
+        margin-bottom: 25px
 
 .get-consultation-left
     width: 45%
@@ -673,6 +726,7 @@ footer > .container > .green_btn
     padding: 75px 110px 48px 130px
 
 .get-consultation-form__inp
+    font-family: $ffHel-r
     height: 100%
     flex: 1 1 390px
 

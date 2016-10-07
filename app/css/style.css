@@ -1729,6 +1729,6 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
   }
 
   .scheme-of-work__item {
-    width: calc(25% - 70px);
+    width: calc(40% - 70px);
   }
 }

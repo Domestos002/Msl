@@ -15,7 +15,7 @@ $ffHel: "HelveticaNeueCyr"
 $ffHel-r: "HelveticaNeueCyr-Roman"
 $ffHel-b: "HelveticaNeueCyr-Bold_0"
 $ffHel-l: "HelveticaNeueCyr-Light"
-
+//
 
 @import _framework.sass
 @import _responsive.sass
@@ -41,11 +41,15 @@ input
 .base-text
     color: $main-color-black
     font-family: $ffMcyr300
-    font-size: 15px //grhr
     line-height: 22px
+
+.b-you-get__header__title > p
+    font-size: 18px
+    font-family: $ffHel-b
 
 .b-base-text > p
     @extend .base-text
+    font-size: 15px
     margin-bottom: 20px
     &:last-child
         margin-bottom: 0
@@ -54,15 +58,12 @@ input
     font-family: $ffMcyr300
     color: $lighter-grey
     line-height: 33px
-    font-size: 18px
 
 .page-title
     font-family: $ffHel-b
-    font-size: 53px
 
 .advantages-text
     color: #474747
-    font-size: 36px
     line-height: 28px
     font-family: $ffHel-b
 
@@ -70,15 +71,13 @@ input
     font-family: $ffHel-r
     color: $lighter-grey
     line-height: 18px
-    font-size: 14px
 
 .footer-label
     font-family: $ffHel-r
     color: $darker-grey
-    font-size: 12px
-    line-height: 28
     position: absolute
-    top: 0
+    font-size: 12px
+    top: 125%
     left: 0
     text-decoration: underline
 
@@ -86,11 +85,8 @@ input
 .income-form-label
     font-family: $ffHel-l
     color: $lighter-grey
-    font-size: 18px
 
-.title-rom
-    font-size: 16px
-//___________________endtext___________________________________
+//________2___________endtext___________________________________
 
 
 .slider
@@ -148,7 +144,7 @@ input
 .header-nav__right
     flex: 1 1 445px
     display: flex
-    align-self: center
+    align-items: center
     justify-content: space-around
 
 .work-hours
@@ -164,7 +160,6 @@ input
     font-size: 18px
     
 .green_btn
-    margin: auto
     font-family: $ffHel-r
     font-size: 16px
     text-decoration: none
@@ -179,6 +174,10 @@ input
         background-color: $green*0.8
         color: #fff
         text-decoration: none
+
+.green_btn-header
+    @extend .green_btn
+    font-size: 12px
 
 .phone-icon
     +sprite(phone-icon)
@@ -495,15 +494,14 @@ input
 
 .footer-item
     width: 24.25%
-    margin: auto
     position: relative
 
 .footer-content
     width: 17%
-    margin: auto
     position: relative
 
 footer > .container
+    padding: 135px 70px
     display: flex
     justify-content: space-around
     align-items: center
@@ -511,7 +509,7 @@ footer > .container
     -moz-box-sizing: border-box
     box-sizing: border-box
     background-color: #28282e
-    height: 350px
+
 
 
 footer > .container > .green_btn
@@ -639,13 +637,43 @@ footer > .container > .green_btn
 .owl-prev, .owl-next
     width: 50px
     height: 50px
+    box-sizing: border-box
     border: 1px solid #f0f0f1
+
 
 .owl-prev
     float: left
+    position: relative
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        z-index: 10
+        left: 110%
+        bottom: calc(50% - 8px)
+        width: 10px
+        height: 10px
+        border: 2px solid transparent
+        border-top: 2px solid #cdcdcd
+        border-left: 2px solid #cdcdcd
+        transform: rotate(-45deg)
 
 .owl-next
     float: right
+    position: relative
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        z-index: 10
+        right: 110%
+        bottom: calc(50% - 8px)
+        width: 10px
+        height: 10px
+        border: 2px solid transparent
+        border-bottom: 2px solid #cdcdcd
+        border-right: 2px solid #cdcdcd
+        transform: rotate(-45deg)
 
 .owl-page
     display: inline-block
@@ -778,6 +806,3 @@ footer > .container > .green_btn
 .map
     line-height: 0
     font-size: 0
-
-footer >.container
-    padding: 75px 70px

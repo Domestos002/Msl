@@ -8,51 +8,59 @@
 }
 
 .lh17 {
-  line-height: 17px !important;
+  line-height: 17px;
 }
 
 .fz16 {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .fz46 {
-  font-size: 46px !important;
+  font-size: 46px;
+}
+
+.fz53 {
+  font-size: 53px;
 }
 
 .fz14 {
-  font-size: 14px !important;
+  font-size: 14px;
 }
 
 .fz17 {
-  font-size: 17px !important;
+  font-size: 17px;
 }
 
 .fz18 {
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 .fz12 {
-  font-size: 12px !important;
+  font-size: 12px;
 }
 
 .fz36 {
-  font-size: 36px !important;
+  font-size: 36px;
 }
 
 .fz33 {
-  font-size: 33px !important;
+  font-size: 33px;
 }
 
 .fz24 {
-  font-size: 24px !important;
+  font-size: 24px;
+}
+
+.fz24 {
+  font-size: 24px;
 }
 
 .fz22 {
-  font-size: 22px !important;
+  font-size: 22px;
 }
 
 .lh28 {
-  line-height: 28px !important;
+  line-height: 28px;
 }
 
 .ffR-r {
@@ -122,6 +130,10 @@
 
 .mb25 {
   margin-bottom: 25px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
 }
 
 .mb5 {
@@ -356,11 +368,16 @@ input:-ms-input-placeholder {
 .base-text, .b-base-text > p {
   color: #212121;
   font-family: "Museo Cyrl 300";
-  font-size: 15px;
   line-height: 22px;
 }
 
+.b-you-get__header__title > p {
+  font-size: 18px;
+  font-family: "HelveticaNeueCyr-Bold_0";
+}
+
 .b-base-text > p {
+  font-size: 15px;
   margin-bottom: 20px;
 }
 .b-base-text > p:last-child {
@@ -371,17 +388,14 @@ input:-ms-input-placeholder {
   font-family: "Museo Cyrl 300";
   color: #646464;
   line-height: 33px;
-  font-size: 18px;
 }
 
 .page-title {
   font-family: "HelveticaNeueCyr-Bold_0";
-  font-size: 53px;
 }
 
 .advantages-text {
   color: #474747;
-  font-size: 36px;
   line-height: 28px;
   font-family: "HelveticaNeueCyr-Bold_0";
 }
@@ -390,16 +404,14 @@ input:-ms-input-placeholder {
   font-family: "HelveticaNeueCyr-Roman";
   color: #646464;
   line-height: 18px;
-  font-size: 14px;
 }
 
 .footer-label {
   font-family: "HelveticaNeueCyr-Roman";
   color: #76767b;
-  font-size: 12px;
-  line-height: 28;
   position: absolute;
-  top: 0;
+  font-size: 12px;
+  top: 125%;
   left: 0;
   text-decoration: underline;
 }
@@ -407,11 +419,6 @@ input:-ms-input-placeholder {
 .income-form-label {
   font-family: "HelveticaNeueCyr-Light";
   color: #646464;
-  font-size: 18px;
-}
-
-.title-rom {
-  font-size: 16px;
 }
 
 .slider {
@@ -489,7 +496,7 @@ input:-ms-input-placeholder {
 .header-nav__right {
   flex: 1 1 445px;
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -507,8 +514,7 @@ input:-ms-input-placeholder {
   font-size: 18px;
 }
 
-.green_btn, .calc_btn {
-  margin: auto;
+.green_btn, .green_btn-header, .calc_btn {
   font-family: "HelveticaNeueCyr-Roman";
   font-size: 16px;
   text-decoration: none;
@@ -520,10 +526,14 @@ input:-ms-input-placeholder {
   color: #fff;
   background-color: #06921c;
 }
-.green_btn:hover, .calc_btn:hover {
+.green_btn:hover, .green_btn-header:hover, .calc_btn:hover {
   background-color: #057516;
   color: #fff;
   text-decoration: none;
+}
+
+.green_btn-header {
+  font-size: 12px;
 }
 
 .phone-icon {
@@ -974,7 +984,7 @@ input:-ms-input-placeholder {
   border-right: 2px solid #ef4035;
   transform: rotate(-45deg);
 }
-.scheme-of-work__item > .green_btn, .scheme-of-work__item > .calc_btn {
+.scheme-of-work__item > .green_btn, .scheme-of-work__item > .green_btn-header, .scheme-of-work__item > .calc_btn {
   height: 45px;
   width: 100%;
 }
@@ -1119,17 +1129,16 @@ input:-ms-input-placeholder {
 
 .footer-item {
   width: 24.25%;
-  margin: auto;
   position: relative;
 }
 
 .footer-content {
   width: 17%;
-  margin: auto;
   position: relative;
 }
 
 footer > .container {
+  padding: 135px 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1137,10 +1146,9 @@ footer > .container {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #28282e;
-  height: 350px;
 }
 
-footer > .container > .green_btn, footer > .container > .calc_btn {
+footer > .container > .green_btn, footer > .container > .green_btn-header, footer > .container > .calc_btn {
   font-family: "HelveticaNeueCyr-Roman";
   font-size: 16px;
   text-decoration: none;
@@ -1312,15 +1320,46 @@ footer > .container > .green_btn, footer > .container > .calc_btn {
 .owl-prev, .owl-next {
   width: 50px;
   height: 50px;
+  box-sizing: border-box;
   border: 1px solid #f0f0f1;
 }
 
 .owl-prev {
   float: left;
+  position: relative;
+}
+.owl-prev:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  left: 110%;
+  bottom: calc(50% - 8px);
+  width: 10px;
+  height: 10px;
+  border: 2px solid transparent;
+  border-top: 2px solid #cdcdcd;
+  border-left: 2px solid #cdcdcd;
+  transform: rotate(-45deg);
 }
 
 .owl-next {
   float: right;
+  position: relative;
+}
+.owl-next:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  right: 110%;
+  bottom: calc(50% - 8px);
+  width: 10px;
+  height: 10px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #cdcdcd;
+  border-right: 2px solid #cdcdcd;
+  transform: rotate(-45deg);
 }
 
 .owl-page {
@@ -1664,8 +1703,4 @@ footer > .container > .green_btn, footer > .container > .calc_btn {
 .map {
   line-height: 0;
   font-size: 0;
-}
-
-footer > .container {
-  padding: 75px 70px;
 }

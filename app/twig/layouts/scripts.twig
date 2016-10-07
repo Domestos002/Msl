@@ -13,7 +13,16 @@
         $(".b-main-slider").owlCarousel({
             items: 1,
             loop: true,
-            nav: true,
+            navigation: true,
+            dots: true,
+            mouseDrag: true
+        });
+    });
+    $(document).ready(function() {
+        $(".slider").owlCarousel({
+            items: 1,
+            loop: true,
+            navigation: false,
             dots: true,
             mouseDrag: true
         });

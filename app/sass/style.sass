@@ -93,7 +93,9 @@ input
 //___________________endtext___________________________________
 
 
-
+.slider
+    background-color: $darker-white
+    
 .clearfix:after
     clear: both
     content: ''
@@ -604,17 +606,46 @@ footer > .container > .green_btn
 
 .b-our-projects__result-list
     padding: 0
-    list-style-type: circle
+    list-style-type: none
     list-style-position: inside
 
 .b-our-projects__result-list-item
-    margin-bottom: 10px
+    margin-bottom: 10px //grrgerg
+
+.b-our-projects__result-list-item
+    display: inline-block
+    vertical-align: middle
+    &:before
+        content: ''
+        width: 10px
+        margin-right: 20px
+        height: 10px
+        +sprite(mark)
+        display: inline-block
+        vertical-align: middle
 
 .owl-controls
     text-align: center
 
 .owl-pagination
     display: inline-block
+
+.owl-buttons
+    width: 100%
+    position: absolute
+    top: 50%
+    right: 0
+
+.owl-prev, .owl-next
+    width: 50px
+    height: 50px
+    border: 1px solid #f0f0f1
+
+.owl-prev
+    float: left
+
+.owl-next
+    float: right
 
 .owl-page
     display: inline-block

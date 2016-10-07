@@ -1700,9 +1700,16 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
 }
 
 .commercial-proposal {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0692da;
+}
+
+.commercial-proposal__link {
   padding-top: 37px;
   padding-bottom: 37px;
-  background-color: #0692da;
 }
 
 .map {

@@ -432,9 +432,14 @@ input:-ms-input-placeholder {
   line-height: 22px;
 }
 
+.b-you-get__header__title {
+  position: relative;
+  padding-left: 40px;
+}
 .b-you-get__header__title > p {
   font-size: 18px;
   font-family: "HelveticaNeueCyr-Bold_0";
+  text-align: left;
 }
 
 .b-base-text > p {
@@ -480,6 +485,7 @@ input:-ms-input-placeholder {
 .income-form-label {
   font-family: "HelveticaNeueCyr-Light";
   color: #646464;
+  font-size: 18px;
 }
 
 .slider {
@@ -783,14 +789,14 @@ input:-ms-input-placeholder {
 }
 
 .first-screen {
-  background-image: url('../images/first-screen.png?1475567949');
+  background-image: url('../images/first-screen.png?1475584111');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../images/first-screen@2x.png?1475584936');
+    background-image: url('../images/first-screen@2x.png?1475841819');
     background-size: cover;
   }
 }
@@ -996,6 +1002,12 @@ input:-ms-input-placeholder {
   text-align: justify;
   line-height: 0;
   font-size: 0;
+  margin-bottom: 30px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
 }
 .you-get-list:after {
   width: 100%;
@@ -1011,15 +1023,55 @@ input:-ms-input-placeholder {
   width: 47.5%;
   vertical-align: top;
   box-sizing: border-box;
-  padding: 20px;
   line-height: 22px;
   border: 1px solid #ebe9e8;
   background-color: #fff;
-  margin-bottom: 30px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+}
+.b-you-get.h100p {
+  height: 100%;
+}
+.b-you-get__inner {
+  padding: 20px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .b-you-get {
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto !important;
+  }
+  .b-you-get:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .b-you-get__header__icon {
-  width: 93px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  .b-you-get__header__icon {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+  }
 }
 
 .b-you-get__number {
@@ -1030,8 +1082,16 @@ input:-ms-input-placeholder {
   color: #fff;
   text-align: center;
   vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
+.b-you-get__header {
+  position: relative;
+  padding: 20px 0 20px 115px;
+}
 .b-you-get__header:after {
   content: "";
   display: block;
@@ -1041,6 +1101,15 @@ input:-ms-input-placeholder {
   right: -20px;
   background-color: #0692da;
   width: calc(100% - 120px + 22px);
+}
+@media screen and (max-width: 767px) {
+  .b-you-get__header {
+    padding-left: 0;
+    text-align: center;
+  }
+  .b-you-get__header:after {
+    display: none;
+  }
 }
 
 .mobile-icon {
@@ -1340,7 +1409,7 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
 }
 
 .calculation-of-income {
-  background-image: url('../images/calculation-of-income.png?1475568379');
+  background-image: url('../images/calculation-of-income.png?1475841819');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1348,7 +1417,7 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .calculation-of-income {
-    background-image: url('../images/calculation-of-income@2x.png?1475661555');
+    background-image: url('../images/calculation-of-income@2x.png?1475841819');
     background-size: cover;
   }
 }
@@ -2414,4 +2483,49 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
   .scheme-of-work__item > .page-title:after {
     display: none;
   }
+}
+.ui-slider-horizontal .ui-slider-range {
+  background: #08b723;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  box-shadow: 0 4px 5px 0 rgba(1, 1, 1, 0.22);
+  cursor: pointer;
+  top: 50%;
+  margin-top: -10px;
+  outline: none;
+  position: absolute;
+}
+
+.ui-slider {
+  background: #dadada;
+  height: 7px;
+  margin: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.slider_ui-handle__val {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: "HelveticaNeueCyr-Roman";
+  color: #646464;
 }

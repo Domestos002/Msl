@@ -15,6 +15,17 @@ $(document).ready(function () {
         $('body').addClass('ovh');
         e.preventDefault();
     });
+    setTimeout(function () {
+        what_youll_get();
+    }, 100);
+
+    var timeout;
+    $(window).resize(function () {
+        clearTimeout(timeout);
+        timeout = setTimeout(function(){
+            what_youll_get();
+        }, 200);
+    });
 
     $(document).on("click", '.sliding-panel__close', function(e) {
         $('.sliding-panel').removeClass('active');
@@ -33,3 +44,20 @@ $(document).ready(function () {
 
 });
 
+function what_youll_get() {
+    $('.you-get-list').each(function(e){
+        var h = 0;
+        var bl = $(this);
+        // bl.find('.b-you-get').removeClass('h100p');
+        bl.find('.b-you-get__inner').each(function () {
+            var hh = $(this).outerHeight();
+            if(h < hh) {
+                h = hh;
+            }
+        });
+        setTimeout(function () {
+            bl.find('.b-you-get').css({height: h});
+            // bl.find('b-you-get').addClass('h100p');
+        },100);
+    });
+}

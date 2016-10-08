@@ -473,6 +473,7 @@ input:-ms-input-placeholder {
 .income-form-label {
   font-family: "HelveticaNeueCyr-Light";
   color: #646464;
+  font-size: 18px;
 }
 
 .slider {
@@ -701,14 +702,14 @@ input:-ms-input-placeholder {
 }
 
 .first-screen {
-  background-image: url('../images/first-screen.png?1475857007');
+  background-image: url('../images/first-screen.png?1475584111');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../images/first-screen@2x.png?1475857007');
+    background-image: url('../images/first-screen@2x.png?1475841819');
     background-size: 1280px 700px;
   }
 }
@@ -1255,7 +1256,7 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
 }
 
 .calculation-of-income {
-  background-image: url('../images/calculation-of-income.png?1475857007');
+  background-image: url('../images/calculation-of-income.png?1475841819');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1263,7 +1264,7 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .calculation-of-income {
-    background-image: url('../images/calculation-of-income@2x.png?1475857007');
+    background-image: url('../images/calculation-of-income@2x.png?1475841819');
     background-size: 640px 375px;
   }
 }
@@ -1865,4 +1866,49 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
   .scheme-of-work__item {
     width: calc(40% - 70px);
   }
+}
+.ui-slider-horizontal .ui-slider-range {
+  background: #08b723;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  box-shadow: 0 4px 5px 0 rgba(1, 1, 1, 0.22);
+  cursor: pointer;
+  top: 50%;
+  margin-top: -10px;
+  outline: none;
+  position: absolute;
+}
+
+.ui-slider {
+  background: #dadada;
+  height: 7px;
+  margin: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.slider_ui-handle__val {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: "HelveticaNeueCyr-Roman";
+  color: #646464;
 }

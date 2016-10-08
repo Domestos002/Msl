@@ -5,6 +5,7 @@
   "author": "Yuriy Bogatyrenko",
   "dependencies": {
     "uikit": "^2.27.1",
-    "owlcarousel": "^1.3.2"
+    "owlcarousel": "^1.3.2",
+    "jquery-ui": "jqueryui#^1.12.1"
   }
 }

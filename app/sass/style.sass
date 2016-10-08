@@ -26,9 +26,8 @@ body
     font-size: 14px
 
 input
-    font-family: $ffMcyr500
     +phc($grey)
-    padding: 20px !important
+    padding: 0 20px
     font-family: $ffHel-r
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
@@ -244,6 +243,7 @@ input
 
 .red_btn
     @extend .empty_btn
+    cursor: pointer
     background-color: $red
     border: 1px solid transparent
     &:hover
@@ -528,15 +528,16 @@ footer > .container > .green_btn
     background-position: 100% center //erghehrgf
     background-size: cover
     background-repeat: no-repeat
+    padding: 70px 0
     & >.container
-        padding: 70px 135px
+        max-width: 1000px
 
 .b-calculation-of-income
     padding: 50px
     padding-bottom: 0
-    box-sizing: border-box
-    max-width: 1000px
-    margin: 0 auto
+    //box-sizing: border-box
+    //max-width: 1000px
+    //margin: 0 auto
     //background-color: #fff
     position: relative
     &:before
@@ -566,6 +567,7 @@ footer > .container > .green_btn
     display: inline-block
     width: 276px
     line-height: 62px
+    cursor: pointer
 
 .calculation__inner
     display: flex
@@ -589,6 +591,19 @@ footer > .container > .green_btn
 
 .our-projects
     background-color: $darker-white
+    padding: 40px 0
+
+.our-projects__main-slider
+    margin-bottom: 40px
+    &.b-main-slider
+        padding-bottom: 0
+
+    .owl-pagination
+        position: absolute
+        top: 100%
+        margin-top: 20px
+        left: 0
+        width: 100%
 
 .our-projects > .container
     padding: 39px 55px
@@ -635,29 +650,26 @@ footer > .container > .green_btn
 .owl-pagination
     display: inline-block
 
-.owl-buttons
-    width: 100%
-    position: absolute
-    top: 50%
-    right: 0
-
 .owl-prev, .owl-next
     width: 50px
     height: 50px
     font-size: 0
     box-sizing: border-box
     border: 1px solid #f0f0f1
-
+    position: absolute
+    top: 50%
+    margin-top: -25px
+    background: #fff
 
 .owl-prev
-    float: left
-    position: relative
+    right: 100%
+    margin-right: -25px
     &:before
         content: ''
         display: block
         position: absolute
         z-index: 10
-        left: 50%
+        left: calc(50% - 4px)
         bottom: calc(50% - 8px)
         width: 10px
         height: 10px
@@ -667,14 +679,14 @@ footer > .container > .green_btn
         transform: rotate(-45deg)
 
 .owl-next
-    float: right
-    position: relative
+    left: 100%
+    margin-left: -25px
     &:before
         content: ''
         display: block
         position: absolute
         z-index: 10
-        right: 50%
+        right: calc(50% - 4px)
         bottom: calc(50% - 8px)
         width: 10px
         height: 10px

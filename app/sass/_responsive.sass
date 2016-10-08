@@ -1,6 +1,6 @@
 @media screen and (max-width: 1180px)
     .container
-        padding-left: 25px  !important
+        padding-left: 25px !important
         padding-right: 25px !important
     .fill-form > .fl-grid-b
         flex-wrap: wrap
@@ -10,5 +10,180 @@
         &:last-child
             margin-bottom: 0
     .scheme-of-work__item
-        width: calc(40% - 70px)
+        flex: calc(40%)
+        &:nth-child(2n) > .page-title:after
+            display: none
+        & > .tac
+            width: 240px
+            margin: 0 auto
+    .scheme-of-work__item.lllast:before
+        right: 15%
+        left: 15%
 
+@media screen and (max-width: 660px)
+    .header-nav__right
+        display: none
+    .first-screen > .container
+        padding-top: 15px
+        padding-bottom: 15px
+    .sliding-panel > .fl-grid-a
+        display: block
+
+@media screen and (max-width: 1065px)
+    .header-nav
+        display: none
+    .burger
+        display: block
+    .calculation-of-income > .container
+        max-width: 90%
+    .b-our-project-title
+        flex-direction: column
+    .img
+        margin-bottom: 20px
+    .b-our-project-image >.b-our-projects__result
+        display: flex
+    .b-our-project-info > .b-our-projects__result
+        display: none
+    .b-our-project-image
+        width: 60%
+    .b-our-project-info
+        width: 35%
+
+
+@media screen and (max-width: 450px)
+    .b-calculation-of-income
+        padding: 25px
+    .income-form-input
+        font-size: 14px
+    .calc_btn
+        font-size: 14px
+        width: 205px
+        line-height: 45px
+    .b-page-title
+        & >.page-title
+            font-size: 32px !important
+        & >.title-lev2
+            font-size: 14px !important
+
+@media screen and (max-width: 750px)
+    .scheme-of-work__item.lllast:before
+        right: 10%
+        left: 10%
+
+@media screen and (max-width: 800px)
+    .calculation__inner
+        flex-direction: column
+
+    .calc_btn
+        margin-top: 20px
+
+@media screen and (max-width: 950px)
+    .lllast
+        width: 40% !important
+    .b-our-clients-item
+        width: 50%
+    .get-consultation > .container
+        flex-direction: column
+        align-items: center
+    .get-consultation-right
+        width: 100%
+    .get-consultation-left
+        margin-bottom: 15px
+        width: 100%
+
+@media screen and (max-width: 850px)
+    .lllast
+        width: 40% !important
+    .b-our-clients-item
+        width: 50%
+
+@media screen and (max-width: 580px)
+    .first-screen-content > .page-title
+        font-size: 45px
+        margin-bottom: 20px
+    .first-screen-buttons > .left
+        margin-right: 0
+        margin-bottom: 20px
+        & > .empty_btn
+            width: 195px
+            font-size: 14px
+    .first-screen-buttons > .right > .red_btn
+        width: 195px
+        font-size: 14px
+    .first-screen-bullets__item > .page-title
+        font-size: 14px
+    .first-screen-buttons
+        flex-direction: column
+
+@media screen and (max-width: 650px)
+    .get-consultation-form
+        flex-wrap: wrap
+        padding-bottom: 74px
+    .get-consultation > .container
+        padding-bottom: 10px
+        padding-top: 10px
+
+    .get-consultation-form__inp
+        margin-bottom: 10px
+
+@media screen and (max-width: 370px)
+    .scheme-of-work__item.lllast:before
+        right: 0
+        left: 0
+
+@media screen and (max-width: 450px)
+    .first-screen-bullets
+        justify-content: center
+        flex-direction: column
+
+    .first-screen-bullets__item
+        margin-right: 0  !important
+
+    .first-screen-bullets__item
+        margin: auto !important
+        padding-bottom: 20px
+
+    .first-screen-content > .page-title
+        font-size: 32px
+
+    .fz18
+        font-size: 15px
+    .fz33
+        font-size: 30px
+    .scheme-of-work > .container > .b-page-title > .page-title
+        font-size: 32px
+        margin-bottom: 15px
+    .scheme-of-work > .container > .b-page-title > .title-lev2
+        font-size: 16px
+    .b-page-title
+        margin-bottom: 20px
+
+@media screen and (max-width: 620px)
+    .scheme-of-work__list
+        flex-direction: column
+        align-items: center
+    .scheme-of-work__item
+        width: 100%
+    .lllast
+        width: 100% !important
+    .scheme-of-work__item
+        margin-bottom: 45px
+        padding-bottom: 45px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            z-index: 10
+            left: 47%
+            top: 100%
+            width: 15px
+            height: 15px
+            border: 2px solid transparent
+            border-bottom: 2px solid $red
+            border-left: 2px solid $red
+            transform: rotate(-45deg)
+        &:last-child:after
+            display: none
+        & > .page-title
+            &:after
+                display: none

@@ -23,6 +23,9 @@
 @media screen and (max-width: 660px)
     .header-nav__right
         display: none
+    .first-screen > .container
+        padding-top: 15px
+        padding-bottom: 15px
     .sliding-panel > .fl-grid-a
         display: block
 
@@ -33,6 +36,19 @@
         display: block
     .calculation-of-income > .container
         max-width: 90%
+    .b-our-project-title
+        flex-direction: column
+    .img
+        margin-bottom: 20px
+    .b-our-project-image >.b-our-projects__result
+        display: flex
+    .b-our-project-info > .b-our-projects__result
+        display: none
+    .b-our-project-image
+        width: 60%
+    .b-our-project-info
+        width: 35%
+
 
 @media screen and (max-width: 450px)
     .b-calculation-of-income
@@ -81,6 +97,24 @@
     .b-our-clients-item
         width: 50%
 
+@media screen and (max-width: 580px)
+    .first-screen-content > .page-title
+        font-size: 45px
+        margin-bottom: 20px
+    .first-screen-buttons > .left
+        margin-right: 0
+        margin-bottom: 20px
+        & > .empty_btn
+            width: 195px
+            font-size: 14px
+    .first-screen-buttons > .right > .red_btn
+        width: 195px
+        font-size: 14px
+    .first-screen-bullets__item > .page-title
+        font-size: 14px
+    .first-screen-buttons
+        flex-direction: column
+
 @media screen and (max-width: 650px)
     .get-consultation-form
         flex-wrap: wrap
@@ -98,6 +132,20 @@
         left: 0
 
 @media screen and (max-width: 450px)
+    .first-screen-bullets
+        justify-content: center
+        flex-direction: column
+
+    .first-screen-bullets__item
+        margin-right: 0  !important
+
+    .first-screen-bullets__item
+        margin: auto !important
+        padding-bottom: 20px
+
+    .first-screen-content > .page-title
+        font-size: 32px
+
     .fz18
         font-size: 15px
     .fz33

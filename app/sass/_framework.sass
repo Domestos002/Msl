@@ -66,11 +66,12 @@
     color: $lighter-grey !important
 
 .grey
-    color: $grey !important
+    color: $grey !important2
 
 .tdn
     text-decoration: none !important
-
+    &:hover
+        text-decoration: none !important
 a.tdn
     &:not(.no-hover):hover
         text-decoration: underline !important
@@ -214,6 +215,9 @@ a.tdn
     display: flex
     align-items: center
     margin: auto
+
+.hidden
+    display: none
 
 .ovh
     overflow: hidden

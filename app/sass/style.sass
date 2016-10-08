@@ -16,6 +16,7 @@ $ffHel-r: "HelveticaNeueCyr-Roman"
 $ffHel-b: "HelveticaNeueCyr-Bold_0"
 $ffHel-l: "HelveticaNeueCyr-Light"
 //
+//
 
 @import _framework.sass
 @import fonts.css
@@ -36,9 +37,10 @@ input
 
 .container, .content__contacts
     max-width: 1250px
-    margin: 0px auto
+    min-width: 320px
+    margin: 0 auto
 
-.content__contacts >.container
+.content__contacts > .container
     padding: 0
 
 .fill-form__inp
@@ -94,7 +96,6 @@ input
     left: 0
     text-decoration: underline
 
-
 .income-form-label
     font-family: $ffHel-l
     color: $lighter-grey
@@ -104,7 +105,7 @@ input
 
 .slider
     background-color: $darker-white
-    
+
 .clearfix:after
     clear: both
     content: ''
@@ -116,8 +117,46 @@ input
     align-items: stretch
 
 .header-nav
-    flex: 1 0 440px
+    flex: 1 1 440px
 
+.burger
+    display: none
+
+.burger__stripe
+    display: block
+    background-color: #fff
+    width: 55%
+    height: 5px
+    position: absolute
+    top: 50%
+    +transform(translateY(-50%))
+    left: 23%
+    +trans
+
+.burger__stripe.st-3
+    top: 33%
+
+.burger__stripe.st-1
+    top: 62%
+
+.burger__stripe.st-2
+    top: 48%
+
+.burger
+    position: relative
+    background-color: $blue
+    height: inherit
+    width: 67px
+    cursor: pointer
+    +trans
+    &.active
+        +trans
+        display: none
+
+.burger__stripes
+    position: relative
+    width: 100%
+//
 .header-logo-wrapper
     padding-left: 15px
     flex: 0 0 165px
@@ -127,8 +166,13 @@ input
     +sprite(logo)
     display: inline-block
 
+.header-nav-mobile
+    +trans()
+    &.header-nav-listing
+        flex-direction: row !important
 
 .header-nav__item
+    padding: 0 10px
     list-style: none
     background-color: #fff
     box-sizing: border-box
@@ -141,7 +185,6 @@ input
 
     font-size: 12px
     font-family: $ffHel-r
-    padding: 0 20px
     text-decoration: none
     color: $main-color-black
     text-transform: uppercase
@@ -169,7 +212,7 @@ input
     color: $main-color-black
     font-weight: 700
     font-size: 18px
-    
+
 .green_btn
     font-family: $ffHel-r
     font-size: 16px
@@ -212,15 +255,13 @@ input
     &:last-child
         margin-right: 0
 
-
 .first-screen
-    +retina-bg("first-screen.png","first-screen@2x.png")
+    +retina-bg("first-screen.png", "first-screen@2x.png", true) //rghrgh
     background-position: 100% center
     background-size: cover
     background-repeat: no-repeat
     & > .container
         padding: 135px 160px
-
 
 .first-screen-bullets
     display: flex
@@ -251,8 +292,6 @@ input
     border: 1px solid transparent
     &:hover
         background-color: $red*0.8
-
-
 
 .wrapper
     max-width: 680px
@@ -298,12 +337,11 @@ input
         border-bottom: 2px solid $red
         border-left: 2px solid $red
         transform: rotate(-45deg)
-        
+
 .you-get
     background-color: $darker-white
-    & >.container
+    & > .container
         padding: 80px 35px
-
 
 .target-icon
     +sprite(target-icon)
@@ -390,6 +428,19 @@ input
     display: inline-block
     vertical-align: middle
 
+.b-circle
+    &:after
+        z-index: -1
+        content: ''
+        display: block
+        position: absolute
+        right: calc(50% - 27px)
+        bottom: calc(100% - 50px)
+        background-color: $blue
+        width: 57px
+        height: 57px
+        border-radius: 50%
+
 .scheme-of-work__list
     display: flex
     flex-wrap: wrap
@@ -401,12 +452,13 @@ input
     & > .page-title
         margin-bottom: 25px
         position: relative
+        line-height: 1.1em
         &:after
             content: ''
             display: block
             position: absolute
             z-index: 10
-            left: 110%
+            left: 100%
             bottom: calc(50% - 8px)
             width: 15px
             height: 15px
@@ -416,7 +468,7 @@ input
             transform: rotate(-45deg)
     & > .green_btn
         height: 45px
-        width: 100%
+        width: 190px
 
     text-align: center
     position: relative
@@ -436,16 +488,6 @@ input
             bottom: 0
             background-color: $blue
             color: #fff
-        &:after
-            content: ''
-            display: block
-            position: absolute
-            right: calc(50% - 27px)
-            bottom: calc(100% - 50px)
-            background-color: $blue
-            width: 57px
-            height: 57px
-            border-radius: 50%
 
 .scheme-of-work-icon
     margin-bottom: 20px
@@ -456,7 +498,7 @@ input
     list-style-type: disc
     display: inline-block
 
-.scheme-of-work >.container
+.scheme-of-work > .container
     padding: 85px 54px
 
 .content__contacts
@@ -464,14 +506,14 @@ input
     padding-bottom: 60px
     background: linear-gradient(to bottom, #f7f7f7 20px, #fff 20px)
 
-
 .content__contacts__info
     background-color: #fff
     width: 52%
     //padding: 0 70px
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
-    box-sizing: border-box //greg
+    box-sizing: border-box
+//greg
 
 
 .b-person
@@ -499,7 +541,6 @@ input
 footer
     background-color: #28282e
 
-
 .footer-item
     width: 24.25%
     position: relative
@@ -517,8 +558,6 @@ footer > .container
     -moz-box-sizing: border-box
     box-sizing: border-box
 
-
-
 footer > .container > .green_btn
     font-family: $ffHel-r
     font-size: 16px
@@ -527,13 +566,14 @@ footer > .container > .green_btn
     line-height: 55px
 
 .calculation-of-income
-    +retina-bg("calculation-of-income.png","calculation-of-income@2x.png")
-    background-position: 100% center //erghehrgf
+    +retina-bg("calculation-of-income.png", "calculation-of-income@2x.png", true)
+    background-position: 100% center
+    //erghehrgf
     background-size: cover
     background-repeat: no-repeat
     padding: 70px 0
-    & >.container
-        max-width: 1000px
+    & > .container
+        max-width: 70%
 
 .b-calculation-of-income
     padding: 50px
@@ -548,7 +588,7 @@ footer > .container > .green_btn
         top: 0
         left: 0
         right: 0
-        bottom: 30px
+        bottom: 10%
         content: ''
         display: block
         background-color: #fff
@@ -563,7 +603,6 @@ footer > .container > .green_btn
         content: ""
         display: block
         background-color: $red
-
 
 .calc_btn
     @extend .green_btn
@@ -584,7 +623,10 @@ footer > .container > .green_btn
     font-size: 16px
 
 .calculation-of-income__form__col
-    width: 47.5%
+    flex: 47.5%
+    margin-right: 5%
+    &.last-child
+        margin-right: 0
 
 .b-our-projects__result-item
     width: 47.5%
@@ -613,14 +655,14 @@ footer > .container > .green_btn
 
 .b-our-project-info
     float: right
-    width: calc(100%  - 450px)
+    width: calc(100% - 450px)
 
 .our-projects-content > .container
     padding: 67px 85px 67px 45px
 
 .b-our-project-title > .title-lev2 > p
     margin: 0
-    
+
 .b-our-project-title
     border-bottom: 1px solid #e2e2e2
     padding-bottom: 30px
@@ -631,7 +673,8 @@ footer > .container > .green_btn
     list-style-position: inside
 
 .b-our-projects__result-list-item
-    margin-bottom: 10px //grrgerg
+    margin-bottom: 10px
+//grrgerg
 
 .b-our-projects__result-list-item
     display: inline-block
@@ -700,7 +743,8 @@ footer > .container > .green_btn
 
 .owl-page
     display: inline-block
-    background-color: #d3d3d3 //rehfhd
+    background-color: #d3d3d3
+    //rehfhd
     width: 13px
     height: 13px
     border-radius: 50%
@@ -717,7 +761,8 @@ footer > .container > .green_btn
     display: inline-block
 
 .cav-icon
-    +sprite(cav) //erghtrty
+    +sprite(cav)
+    //erghtrty
     display: inline-block
 
 .love-korea-icon
@@ -759,9 +804,10 @@ footer > .container > .green_btn
 .b-our-clients-item
     text-align: center
     width: 33.3%
-    margin-bottom: 70px //erhs
+    margin-bottom: 70px
+//erhs
 
-.our-clients > .container >.b-page-title
+.our-clients > .container > .b-page-title
     width: 37%
     margin-bottom: 10%
 
@@ -773,7 +819,7 @@ footer > .container > .green_btn
     & > .container
         padding: 67px 75px 67px 75px
 
-.clients-slider > .owl-controls > .owl-pagination >.owl-page
+.clients-slider > .owl-controls > .owl-pagination > .owl-page
     width: 10px
     height: 10px
     margin-right: 10px
@@ -796,14 +842,13 @@ footer > .container > .green_btn
 .get-consultation-left
     width: 45%
 
-
 .get-consultation-right
     width: 55%
 
 .get-consultation-form
     height: 64px
 
-.get-consultation >.container
+.get-consultation > .container
     box-sizing: border-box
     padding: 75px 110px 75px 130px
 
@@ -835,5 +880,127 @@ footer > .container > .green_btn
 .map
     line-height: 0
     font-size: 0
+
+
+.sliding-panel__close
+    position: absolute
+    top: 0px
+    right: 0px
+    height: 30px
+    width:  30px
+    padding: 10px 35px
+    cursor: pointer
+    +trans
+    &:before
+        display: block
+        background-color: #fff
+        width: 40%
+        height: 5px
+        position: absolute
+        top: 50%
+        content: ""
+        +transform(translateY(-50%))
+        +transform(translateY(-50%) rotate(45deg))
+    &:after
+        display: block
+        background-color: #fff
+        width: 40%
+        height: 5px
+        position: absolute
+        top: 50%
+        content: ""
+        +transform(translateY(-50%))
+        +transform(translateY(-50%) rotate(-45deg))
+
+.sliding-panel
+    z-index: 100
+    overflow: auto
+    min-width: 320px
+    position: fixed
+    top: 0
+    background-color: green
+    height: 100%
+    width: 100%
+    right: 100%
+    +trans()
+    &.active
+        right: 0%
+        overflow: auto
+
+.sliding-panel-link:after
+    +arr(5, 7, #fff, r)
+    content: ''
+    position: absolute
+    display: block
+    top: 70px
+    right: 21px
+    top: 50%
+    +transform(translateY(-50%))
+
+.sliding-panel-link.dd.active:after
+    +arr(5, 7, #fff, b)
+    content: ''
+    position: absolute
+    display: block
+    top: 70px
+    right: 21px
+    top: 50%
+    +transform(translateY(-50%))
+
+.sliding-panel-dd
+    color: white
+    font-size: 15px
+    font-weight: 400
+    background-color: rgba(255, 255, 255, 0.15)
+    padding: 23px 51px 20px 44px
+    margin-bottom: 5px
+    line-height: 24px
+    position: relative
+    border-bottom: 1px solid #101010
+    &:after
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background-color: #4a4747
+        content: ""
+    &:after
+        display: none
+
+.sliding-panel-dd__item > a
+    text-transform: uppercase
+    display: block
+    color: $main-color-black
+    font-family: $ffHel-r
+    font-size: 15px
+    font-weight: 400
+    padding: 10px 0 //rgerghe
+    &:hover
+        text-decoration: underline
+
+.sliding-panel-item
+    display: block
+    margin-bottom: 5px
+    font-family: $ffHel-r
+    line-height: 24px
+    position: relative
+    border-bottom: 3px solid $red
+
+.sliding-panel-list
+    padding: 60px 0
+
+.sliding-panel-link
+    text-transform: uppercase
+    display: block
+    color: white
+    font-family: $ffHel-r
+    text-decoration: none
+    font-size: 18px
+    font-weight: 400
+    padding: 23px 51px 20px 44px
+    &:hover
+        background-color: #10a3ff
+
 
 @import _responsive.sass

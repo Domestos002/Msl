@@ -2157,6 +2157,32 @@ footer > .container > .green_btn, footer > .container > .green_btn-header, foote
     display: block;
   }
 }
+@media screen and (max-width: 710px) {
+  .b-our-projects__result {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .b-our-project-image {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+  }
+
+  .b-our-project-info {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+  }
+
+  .b-our-projects__result-item {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1065px) {
   .header-nav {
     display: none;

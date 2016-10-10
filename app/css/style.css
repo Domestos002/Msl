@@ -132,6 +132,9 @@ a.tdn:not(.no-hover):hover {
 .inline-grid > div {
   display: inline-block;
 }
+.inline-grid:last-child {
+  text-align: left;
+}
 
 .mr20 {
   margin-right: 20px;
@@ -809,7 +812,7 @@ input:-ms-input-placeholder {
   }
 }
 .first-screen > .container {
-  padding: 135px 160px;
+  padding: 123px 160px;
 }
 
 .first-screen-bullets {
@@ -1933,6 +1936,86 @@ footer {
     background-position: 0 -782px;
     height: 45px;
     width: 154px;
+  }
+}
+
+.prooptics-icon {
+  background-image: url('../images/icons-s773b1c619e.png');
+  background-position: 0 -996px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 35px;
+  width: 148px;
+  display: inline-block;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .prooptics-icon {
+    background-image: url('../images/icons-2x-sdd6072dff7.png');
+    background-size: 188px auto;
+    background-position: 0 -996px;
+    height: 35px;
+    width: 148px;
+  }
+}
+
+.samokat-rf-icon {
+  background-image: url('../images/icons-s773b1c619e.png');
+  background-position: 0 -1217px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 30px;
+  width: 188px;
+  display: inline-block;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .samokat-rf-icon {
+    background-image: url('../images/icons-2x-sdd6072dff7.png');
+    background-size: 188px auto;
+    background-position: 0 -1217px;
+    height: 30px;
+    width: 188px;
+  }
+}
+
+.made-clim-icon {
+  background-image: url('../images/icons-s773b1c619e.png');
+  background-position: 0 -536px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 32px;
+  width: 155px;
+  display: inline-block;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .made-clim-icon {
+    background-image: url('../images/icons-2x-sdd6072dff7.png');
+    background-size: 188px auto;
+    background-position: 0 -536px;
+    height: 32px;
+    width: 155px;
+  }
+}
+
+.tea-icon {
+  background-image: url('../images/icons-s773b1c619e.png');
+  background-position: 0 -1685px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 93px;
+  width: 117px;
+  display: inline-block;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .tea-icon {
+    background-image: url('../images/icons-2x-sdd6072dff7.png');
+    background-size: 188px auto;
+    background-position: 0 -1685px;
+    height: 93px;
+    width: 117px;
   }
 }
 

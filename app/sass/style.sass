@@ -120,6 +120,12 @@ input
     display: flex
     justify-content: space-between
     align-items: stretch
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 200
+    width: 100%
+    background-color: #fff
 
 .header-nav
     flex: 1 1 440px
@@ -193,7 +199,7 @@ input
 
 .header-nav-listing
     margin: 0
-    line-height: 74px
+    line-height: 82px
     display: flex
     justify-content: space-around
 
@@ -265,7 +271,9 @@ input
     background-size: cover
     background-repeat: no-repeat
     & > .container
-        padding: 123px 160px
+        padding: 25% 10%
+    height: 100vh
+    min-height: 400px
 
 .first-screen-bullets
     display: flex
@@ -331,7 +339,7 @@ input
     height: 70px
     content: ''
     border-radius: 50%
-    top: calc(100% - 23px)
+    top: calc(100% - 37px)
     right: calc(50% - 35px)
     position: absolute
     background-color: #fff
@@ -351,7 +359,7 @@ input
 .you-get
     background-color: $darker-white
     & > .container
-        padding: 80px 35px
+        padding: 35px 35px
 
 .target-icon
     +sprite(target-icon)
@@ -458,6 +466,8 @@ input
 
         &:after
             display: none
+
+
 
 .mobile-icon
     +sprite(mobile-icon)
@@ -719,7 +729,7 @@ footer > .container
 
 .our-projects
     background-color: $darker-white
-    padding: 40px 0
+    padding: 40px 15px
 
 .our-projects__main-slider
     margin-bottom: 40px

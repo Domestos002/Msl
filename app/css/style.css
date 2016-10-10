@@ -144,6 +144,10 @@ a.tdn:not(.no-hover):hover {
   margin-right: 105px;
 }
 
+.mr105 {
+  margin-right: 108px;
+}
+
 .fl-start {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -525,6 +529,12 @@ input:-ms-input-placeholder {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  background-color: #fff;
 }
 
 .header-nav {
@@ -649,7 +659,7 @@ input:-ms-input-placeholder {
 
 .header-nav-listing {
   margin: 0;
-  line-height: 74px;
+  line-height: 82px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -804,6 +814,8 @@ input:-ms-input-placeholder {
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 400px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
@@ -812,7 +824,7 @@ input:-ms-input-placeholder {
   }
 }
 .first-screen > .container {
-  padding: 123px 160px;
+  padding: 25% 10%;
 }
 
 .first-screen-bullets {
@@ -907,7 +919,7 @@ input:-ms-input-placeholder {
   height: 70px;
   content: "";
   border-radius: 50%;
-  top: calc(100% - 23px);
+  top: calc(100% - 37px);
   right: calc(50% - 35px);
   position: absolute;
   background-color: #fff;
@@ -932,7 +944,7 @@ input:-ms-input-placeholder {
   background-color: #f6f6f6;
 }
 .you-get > .container {
-  padding: 80px 35px;
+  padding: 35px 35px;
 }
 
 .target-icon {
@@ -1557,7 +1569,7 @@ footer > .container {
 
 .our-projects {
   background-color: #f6f6f6;
-  padding: 40px 0;
+  padding: 40px 15px;
 }
 
 .our-projects__main-slider {
@@ -2334,10 +2346,6 @@ footer {
     margin-bottom: 20px;
   }
 
-  .footer-item {
-    margin-bottom: 0 !important;
-  }
-
   .footer-content {
     margin-top: 30px !important;
   }
@@ -2354,6 +2362,21 @@ footer {
 @media screen and (max-width: 1000px) {
   footer > .container {
     padding: 20px 0;
+  }
+}
+@media screen and (max-width: 930px) {
+  .footer-item.line {
+    border: none;
+  }
+}
+@media screen and (max-width: 959px) {
+  .first-screen {
+    height: auto;
+  }
+
+  .first-screen > .container {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -2455,11 +2478,6 @@ footer {
     margin-bottom: 20px;
   }
 
-  .first-screen > .container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
   .b-person > .fl-baseline {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -2496,9 +2514,8 @@ footer {
     display: none;
   }
 
-  .first-screen > .container {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .content__contacts__info {
+    background-color: #fff;
   }
 
   .b-person > .fl-baseline {

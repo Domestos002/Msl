@@ -4,8 +4,6 @@
     .footer-content
         text-align: left
         margin-bottom: 20px
-    .footer-item
-        margin-bottom: 0 !important
     .footer-content
         margin-top: 30px !important
 
@@ -18,6 +16,17 @@
 @media screen and (max-width: 1000px)
     footer > .container
         padding: 20px 0
+
+@media screen and (max-width: 930px)
+    .footer-item.line
+        border: none
+
+@media screen and (max-width: 959px)
+    .first-screen
+        height: auto
+    .first-screen > .container
+        padding-top: 150px
+        padding-bottom: 150px
 
 @media screen and (max-width: 1000px)
     footer > .container
@@ -76,9 +85,7 @@
     .our-clients > .container > .b-page-title
         margin: auto
         margin-bottom: 20px
-    .first-screen > .container
-        padding-top: 15px
-        padding-bottom: 15px
+
 
     .b-person > .fl-baseline
         flex-direction: column
@@ -103,9 +110,8 @@
     .header-nav__right
         display: none
 
-    .first-screen > .container
-        padding-top: 15px
-        padding-bottom: 15px
+    .content__contacts__info
+        background-color: #fff
 
     .b-person > .fl-baseline
         flex-direction: column

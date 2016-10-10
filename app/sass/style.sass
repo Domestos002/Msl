@@ -26,6 +26,7 @@ body
     font-family: $ffMcyr500
     font-size: 14px
 
+
 input
     +phc($grey)
     padding: 0 20px
@@ -94,7 +95,6 @@ input
 .footer-label
     font-family: $ffHel-r
     color: $darker-grey
-    position: absolute
     font-size: 12px
     top: 125%
     left: 0
@@ -220,10 +220,12 @@ input
 
 .green_btn
     font-family: $ffHel-r
+    cursor: pointer
     font-size: 16px
     text-decoration: none
     width: 179px
     line-height: 42px
+    text-decoration: none
     text-align: center
     border-radius: 2px
     border: none
@@ -282,6 +284,7 @@ input
     line-height: 60px
     display: inline-block
     width: 255px
+    cursor: pointer
     text-align: center
     color: #fff
     background-color: transparent
@@ -305,22 +308,27 @@ input
 .advantages-list
     padding: 75px
     display: flex
+    box-sizing: border-box
     justify-content: space-around
     flex-direction: row
+    flex-wrap: wrap
     align-items: flex-end
 
 .advantages-item
+    flex: 0 0 270px
+    padding-bottom: 20px
     text-align: center
 
 .advantages-item:after
     content: ''
     display: block
     margin: 0 auto
-    height: 2px
+    height: 3px
     width: 37px
     background-color: $blue
 
 .w-circle
+    cursor: pointer
     display: flex
     width: 70px
     height: 70px
@@ -595,31 +603,53 @@ footer
     background-color: #28282e
 
 .footer-item
-    width: 30%
+    width: 290px
+    height: 205px
     position: relative
+    display: inline-block
+    vertical-align: middle
+    &.line
+        border-right: 3px solid #43434b
+        margin-right: 25px
+    &:after
+        content: ''
+        height: 100%
+        display: inline-block
+        vertical-align: middle
+        visibility: hidden
+
 
 .footer-content
-    width: 50%
+    width: 290px
     position: relative
-    & >.green_btn
-        width: 230px
-        line-height: 70px
+    text-align: center
+    display: inline-block
+    vertical-align: middle
+
+.footer-label
+    position: absolute
+    top: 100%
 
 footer > .container
     padding: 135px 0
-    display: flex
-    justify-content: space-around
-    align-items: center
+    text-align: justify
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
     box-sizing: border-box
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
 
-footer > .container > .green_btn
+.footer_btn
+    @extend .green_btn
     font-family: $ffHel-r
     font-size: 16px
     text-decoration: none
-    width: 227px
+    width: 225px
     line-height: 55px
+    display: inline-block
+    vertical-align: middle
 
 .calculation-of-income
     +retina-bg("calculation-of-income.png", "calculation-of-income@2x.png", true)
@@ -733,7 +763,6 @@ footer > .container > .green_btn
 //grrgerg
 
 .b-our-projects__result-list-item
-    display: inline-block
     margin-left: 30px
     position: relative
     &:before
@@ -815,6 +844,9 @@ footer > .container > .green_btn
 .fire-station-icon
     +sprite(fire-station)
     display: inline-block
+
+footer
+    position: relative
 
 .cav-icon
     +sprite(cav)
@@ -948,7 +980,7 @@ footer > .container > .green_btn
     +trans
     &:before
         display: block
-        background-color: #fff
+        background-color: $main-color-black
         width: 40%
         height: 5px
         position: absolute
@@ -958,7 +990,7 @@ footer > .container > .green_btn
         +transform(translateY(-50%) rotate(45deg))
     &:after
         display: block
-        background-color: #fff
+        background-color: $main-color-black
         width: 40%
         height: 5px
         position: absolute
@@ -973,7 +1005,8 @@ footer > .container > .green_btn
     min-width: 320px
     position: fixed
     top: 0
-    background-color: green
+
+    background-color: rgba(255,255,255,0.95)
     height: 100%
     width: 100%
     right: 100%
@@ -1003,10 +1036,10 @@ footer > .container > .green_btn
     +transform(translateY(-50%))
 
 .sliding-panel-dd
-    color: white
+    color: black
     font-size: 15px
     font-weight: 400
-    background-color: rgba(255, 255, 255, 0.15)
+    background-color: rgba(255, 255, 255, 0.95)
     padding: 23px 51px 20px 44px
     margin-bottom: 5px
     line-height: 24px
@@ -1040,7 +1073,18 @@ footer > .container > .green_btn
     font-family: $ffHel-r
     line-height: 24px
     position: relative
-    border-bottom: 3px solid $red
+    &:after
+        display: block
+        content: ''
+        height: 3px
+        width: 200px
+        background-color: transparent
+        margin-left: 44px
+    &:hover:after
+        background-color: $red
+
+.footer-wrap
+    width: 35%
 
 .sliding-panel-list
     padding: 60px 0
@@ -1048,14 +1092,12 @@ footer > .container > .green_btn
 .sliding-panel-link
     text-transform: uppercase
     display: block
-    color: white
+    color: $main-color-black
     font-family: $ffHel-r
     text-decoration: none
     font-size: 18px
     font-weight: 400
     padding: 23px 51px 20px 44px
-    &:hover
-        background-color: #10a3ff
 
 
 @import _responsive.sass

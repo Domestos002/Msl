@@ -1587,6 +1587,21 @@ footer > .container {
   text-align: center;
 }
 
+.infobubble__content {
+  line-height: normal;
+}
+
+.infobubble__small-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.infobubble__big-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .our-projects > .container {
   padding: 39px 55px;
 }

@@ -70,7 +70,7 @@ function initLandMap() {
         });
     });
 
-    map.data.addListener('click', function(event) {
+    map.addListener('click', function(event) {
         var this_name = event.feature.getProperty('NAME'),
             this_center = event.feature.getProperty('center'),
             center_value = this_center.split(',');
@@ -86,7 +86,7 @@ function initLandMap() {
             };
         });
 
-        var content = "<div class='b-map-infobox'><span class='close'></span><p class='b-map-infobox__title'>Ð¢ÐµÑ€Ñ€Ð¸Ñ‚Ð¾Ñ€Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€</p><p class='b-map-infobox__descr'>"+this_name+"</p></div>",
+        var content = "<div class='b-map-infobox'><span class='close'></span><p class='b-map-infobox__title'>Infobubble</p><p class='b-map-infobox__descr'>"+this_name+"</p></div>",
             opiton = optionsInfoBubble(map, content, new google.maps.LatLng((center_value[0]), (center_value[1])));
 
 
@@ -119,6 +119,7 @@ function initLandMap() {
 
 function initLandMap2() {
     var secheltLoc = new google.maps.LatLng(55.706098, 37.618803);
+    var secheltLoc2 = new google.maps.LatLng(55.708000, 37.618803);
 
 
     map2 = new google.maps.Map(document.getElementById('land-map'), {
@@ -141,6 +142,35 @@ function initLandMap2() {
         },
         position: secheltLoc
     });
+
+    function optionsInfoBubble(map, content, position) {
+        return {
+            map: map,
+            content: content,
+            position: position,
+            shadowStyle: 0,
+            padding: 20,
+            backgroundColor: '#fff',
+            borderRadius: 0,
+            borderWidth: 0,
+            borderColor: '#000',
+            disableAutoPan: true,
+            backgroundClassName: 'infobubble',
+            arrowPosition: 50,
+            arrowSize: 10,
+            arrowStyle: 0,
+            minWidth: 350,
+            minHeight: 90,
+            hideCloseButton: true
+        };
+    }
+
+    marker.addListener('click', function () {
+        var content = '<div class="infobubble__content"><span class="infobubble__small-text">Мы находимся по адресу:</span><br><span class="infobubble__big-text">Москва, <br>улица Серпуховский Вал, 7</span><span class="infobubble__close"></span></div>';
+        var option =  optionsInfoBubble(map2, content, secheltLoc2);
+        var infobubble = new InfoBubble(option);
+        infobubble.open();
+    })
 
 }
 

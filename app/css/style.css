@@ -841,7 +841,7 @@ input:-ms-input-placeholder {
   }
 }
 .first-screen > .container {
-  padding: 25% 10%;
+  padding: 25% 10% !important;
 }
 
 .first-screen-bullets {
@@ -1365,7 +1365,7 @@ input:-ms-input-placeholder {
 
 .content__contacts__info {
   background: linear-gradient(to bottom, #f7f7f7 25px, #fff);
-  padding: 69px 70px;
+  padding: 5% 4% !important;
   width: 58%;
   box-sizing: border-box;
 }
@@ -1750,7 +1750,7 @@ footer > .container {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .owl-page.active {
   background-color: #e84429;
@@ -2130,9 +2130,9 @@ footer {
 .get-consultation-form__inp {
   font-family: "HelveticaNeueCyr-Roman";
   height: 100%;
-  -webkit-flex: 0 0 390px;
-  -ms-flex: 0 0 390px;
-  flex: 0 0 390px;
+  -webkit-flex: 0 0 300px;
+  -ms-flex: 0 0 300px;
+  flex: 0 0 300px;
 }
 
 .get-consultation-form > button {

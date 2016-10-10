@@ -67,6 +67,14 @@
   font-family: "Roboto-Regular";
 }
 
+.ffR-r {
+  font-family: "Roboto-Regular";
+}
+
+.ffHel-r {
+  font-family: "HelveticaNeueCyr-Roman" !important;
+}
+
 .ffMcyr700 {
   font-family: "Museo Cyrl 700" !important;
 }
@@ -232,6 +240,10 @@ a.tdn:not(.no-hover):hover {
 
 .mb45 {
   margin-bottom: 45px;
+}
+
+.w195 {
+  width: 195px !important;
 }
 
 .mb50 {
@@ -710,6 +722,11 @@ input:-ms-input-placeholder {
   border: none;
   color: #fff;
   background-color: #06921c;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
 }
 .green_btn:hover, .green_btn-header:hover, .footer_btn:hover, .calc_btn:hover {
   background-color: #057516;
@@ -810,7 +827,7 @@ input:-ms-input-placeholder {
 }
 
 .first-screen {
-  background-image: url('../images/first-screen.png?1476094548');
+  background-image: url('../images/first-screen.png?1475567949');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -819,7 +836,7 @@ input:-ms-input-placeholder {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../images/first-screen@2x.png?1476094548');
+    background-image: url('../images/first-screen@2x.png?1475584936');
     background-size: cover;
   }
 }
@@ -851,6 +868,11 @@ input:-ms-input-placeholder {
   cursor: pointer;
   text-align: center;
   color: #fff;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
   background-color: transparent;
 }
 .empty_btn:hover, .red_btn:hover {
@@ -897,7 +919,7 @@ input:-ms-input-placeholder {
   -webkit-flex: 0 0 270px;
   -ms-flex: 0 0 270px;
   flex: 0 0 270px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -942,9 +964,14 @@ input:-ms-input-placeholder {
 
 .you-get {
   background-color: #f6f6f6;
+  padding: 6px 35px;
 }
 .you-get > .container {
-  padding: 35px 35px;
+  padding: 35px 15px;
+  padding-bottom: 88px;
+}
+.you-get > .container > .clearfix {
+  padding: 0 40px;
 }
 
 .target-icon {
@@ -1052,8 +1079,9 @@ input:-ms-input-placeholder {
 }
 
 .b-you-get {
+  height: 500px;
   display: inline-block;
-  width: 47.5%;
+  width: calc(50% - 15px);
   vertical-align: top;
   box-sizing: border-box;
   line-height: 22px;
@@ -1092,6 +1120,7 @@ input:-ms-input-placeholder {
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   left: 0;
+  margin-left: 10px;
 }
 @media screen and (max-width: 767px) {
   .b-you-get__header__icon {
@@ -1123,7 +1152,7 @@ input:-ms-input-placeholder {
 
 .b-you-get__header {
   position: relative;
-  padding: 20px 0 20px 115px;
+  padding: 25px 15px 25px 129px;
 }
 .b-you-get__header:after {
   content: "";
@@ -1329,10 +1358,15 @@ input:-ms-input-placeholder {
   padding-bottom: 60px;
 }
 
+.our-clients > .container > .b-page-title {
+  padding-left: 100px;
+  padding-top: 45px;
+}
+
 .content__contacts__info {
   background: linear-gradient(to bottom, #f7f7f7 25px, #fff);
-  padding: 5%;
-  width: 60%;
+  padding: 69px 70px;
+  width: 58%;
   box-sizing: border-box;
 }
 .content__contacts__info.container {
@@ -1341,7 +1375,7 @@ input:-ms-input-placeholder {
 }
 
 .b-person {
-  width: 40%;
+  width: 42%;
   z-index: 10;
 }
 
@@ -1478,24 +1512,24 @@ footer > .container {
 }
 
 .calculation-of-income {
-  background-image: url('../images/calculation-of-income.png?1476094548');
+  background-image: url('../images/calculation-of-income.png?1475568379');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 70px 0;
+  padding: 85px 0;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .calculation-of-income {
-    background-image: url('../images/calculation-of-income@2x.png?1476094548');
+    background-image: url('../images/calculation-of-income@2x.png?1475661555');
     background-size: cover;
   }
 }
 .calculation-of-income > .container {
-  max-width: 70%;
+  max-width: 1000px;
 }
 
 .b-calculation-of-income {
-  padding: 50px;
+  padding: 68px 75px;
   padding-bottom: 0;
   position: relative;
 }
@@ -1504,7 +1538,7 @@ footer > .container {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 10%;
+  bottom: 7%;
   content: "";
   display: block;
   background-color: #fff;
@@ -1569,7 +1603,7 @@ footer > .container {
 
 .our-projects {
   background-color: #f6f6f6;
-  padding: 40px 15px;
+  padding: 81px 15px;
 }
 
 .our-projects__main-slider {
@@ -1581,13 +1615,13 @@ footer > .container {
 .our-projects__main-slider .owl-pagination {
   position: absolute;
   top: 100%;
-  margin-top: 20px;
+  margin-top: 75px;
   left: 0;
   width: 100%;
 }
 
 .our-projects > .container {
-  padding: 39px 55px;
+  padding: 50px 55px;
 }
 
 .b-our-project-info {
@@ -1716,7 +1750,7 @@ footer > .container {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  margin-right: 7px;
+  margin-right: 10px;
 }
 .owl-page.active {
   background-color: #e84429;
@@ -2096,9 +2130,9 @@ footer {
 .get-consultation-form__inp {
   font-family: "HelveticaNeueCyr-Roman";
   height: 100%;
-  -webkit-flex: 1 1 390px;
-  -ms-flex: 1 1 390px;
-  flex: 1 1 390px;
+  -webkit-flex: 0 0 390px;
+  -ms-flex: 0 0 390px;
+  flex: 0 0 390px;
 }
 
 .get-consultation-form > button {
@@ -2130,7 +2164,7 @@ footer {
 }
 
 .commercial-proposal {
-  height: 72px;
+  height: 90px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2336,6 +2370,10 @@ footer {
   padding: 23px 51px 20px 44px;
 }
 
+.b-you-get__inner {
+  padding: 20px 43px;
+}
+
 @media screen and (max-width: 620px) {
   .footer-item.line {
     border: none;
@@ -2367,6 +2405,10 @@ footer {
 @media screen and (max-width: 930px) {
   .footer-item.line {
     border: none;
+  }
+
+  .footer-item.line {
+    height: 115px;
   }
 }
 @media screen and (max-width: 959px) {
@@ -2414,6 +2456,20 @@ footer {
   .container {
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .content__contacts__info {
+    padding: 0;
+  }
+
+  .calculation-of-income {
+    padding: 0;
+  }
+
+  .our-clients > .container > .b-page-title {
+    padding-top: 0;
   }
 
   .fill-form > .fl-grid-b {
@@ -2712,6 +2768,10 @@ footer {
   }
 }
 @media screen and (max-width: 950px) {
+  .our-clients > .container > .b-page-title {
+    padding-left: 0;
+  }
+
   .lllast {
     width: 40% !important;
   }

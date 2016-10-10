@@ -234,6 +234,7 @@ input
     border: none
     color: #fff
     background-color: $green
+    +trans()
     &:hover
         background-color: $green*0.8
         color: #fff
@@ -292,6 +293,7 @@ input
     cursor: pointer
     text-align: center
     color: #fff
+    +trans()
     background-color: transparent
     &:hover
         background-color: $lighter-grey*0.4
@@ -321,7 +323,7 @@ input
 
 .advantages-item
     flex: 0 0 270px
-    padding-bottom: 20px
+    padding-bottom: 40px
     text-align: center
 
 .advantages-item:after
@@ -358,8 +360,12 @@ input
 
 .you-get
     background-color: $darker-white
+    padding: 6px 35px
     & > .container
-        padding: 35px 35px
+        padding: 35px 15px
+        padding-bottom: 88px
+    & > .container >.clearfix
+        padding: 0 40px
 
 .target-icon
     +sprite(target-icon)
@@ -395,9 +401,11 @@ input
         content: ''
         display: inline-block
 
+
 .b-you-get
+    height: 500px
     display: inline-block
-    width: 47.5%
+    width: calc(50% - 15px)
     vertical-align: top
     box-sizing: border-box
     //padding: 20px
@@ -426,6 +434,7 @@ input
     top: 50%
     +transform(translateY(-50%))
     left: 0
+    margin-left: 10px
 
     @media screen and (max-width: 767px)
         position: static
@@ -449,7 +458,7 @@ input
 
 .b-you-get__header
     position: relative
-    padding: 20px 0 20px 115px
+    padding: 25px 15px 25px 129px
     &:after
         content: ''
         display: block
@@ -569,11 +578,14 @@ input
     position: relative
     padding-bottom: 60px
 
+.our-clients > .container > .b-page-title
+    padding-left: 100px
+    padding-top: 45px
 
 .content__contacts__info
     background: linear-gradient(to bottom, #f7f7f7 25px, #fff)
-    padding: 5%
-    width: 60%
+    padding: 69px 70px
+    width: 58%
     //padding: 0 70px
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
@@ -585,7 +597,7 @@ input
 
 
 .b-person
-    width: 40%
+    width: 42%
     z-index: 10
 
 .b-our-project-image
@@ -664,12 +676,12 @@ footer > .container
     //erghehrgf
     background-size: cover
     background-repeat: no-repeat
-    padding: 70px 0
+    padding: 85px 0
     & > .container
-        max-width: 70%
+        max-width: 1000px
 
 .b-calculation-of-income
-    padding: 50px
+    padding: 68px 75px
     padding-bottom: 0
     //box-sizing: border-box
     //max-width: 1000px
@@ -681,7 +693,7 @@ footer > .container
         top: 0
         left: 0
         right: 0
-        bottom: 10%
+        bottom: 7%
         content: ''
         display: block
         background-color: #fff
@@ -729,7 +741,7 @@ footer > .container
 
 .our-projects
     background-color: $darker-white
-    padding: 40px 15px
+    padding: 81px 15px
 
 .our-projects__main-slider
     margin-bottom: 40px
@@ -739,12 +751,12 @@ footer > .container
     .owl-pagination
         position: absolute
         top: 100%
-        margin-top: 20px
+        margin-top: 75px
         left: 0
         width: 100%
 
 .our-projects > .container
-    padding: 39px 55px
+    padding: 50px 55px
 
 .b-our-project-info
     float: right
@@ -840,7 +852,7 @@ footer > .container
     width: 13px
     height: 13px
     border-radius: 50%
-    margin-right: 7px
+    margin-right: 10px
     &.active
         background-color: #e84429
 
@@ -966,7 +978,7 @@ footer
 .get-consultation-form__inp
     font-family: $ffHel-r
     height: 100%
-    flex: 1 1 390px
+    flex: 0 0 390px
 
 .get-consultation-form > button
     flex: 0 0 195px
@@ -978,7 +990,7 @@ footer
     vertical-align: middle
 
 .commercial-proposal
-    height: 72px
+    height: 90px
     display: flex
     align-items: center
     justify-content: center
@@ -1124,7 +1136,7 @@ footer
     padding: 23px 51px 20px 44px
 
 
-
-
+.b-you-get__inner
+    padding: 20px 43px
 @import _responsive.sass
 @import _new_styles.sass

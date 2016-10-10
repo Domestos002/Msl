@@ -9,9 +9,13 @@ $(document).ready(function () {
         e.preventDefault();
     });*/
 
+    $(document).on("click", '.sliding-panel-link', function(e) {
+        $('.sliding-panel').removeClass('active');
+        e.preventDefault();
+    });
+
     $(document).on("click", '.burger', function(e) {
         $('.sliding-panel').addClass('active');
-        $('.burger').addClass('active');
         $('body').addClass('ovh');
         e.preventDefault();
     });
@@ -29,7 +33,6 @@ $(document).ready(function () {
 
     $(document).on("click", '.sliding-panel__close', function(e) {
         $('.sliding-panel').removeClass('active');
-        $('.burger').removeClass('active');
         $('body').removeClass('ovh');
         e.preventDefault();
     });

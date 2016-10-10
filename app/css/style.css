@@ -2388,7 +2388,7 @@ footer {
     margin-top: 30px !important;
   }
 }
-@media screen and (max-width: 1155px) {
+@media screen and (max-width: 1200px) {
   .footer-item {
     margin-bottom: 50px;
   }
@@ -2405,10 +2405,6 @@ footer {
 @media screen and (max-width: 930px) {
   .footer-item.line {
     border: none;
-  }
-
-  .footer-item.line {
-    height: 115px;
   }
 }
 @media screen and (max-width: 959px) {

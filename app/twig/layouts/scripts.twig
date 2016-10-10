@@ -3,7 +3,7 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="js/input.mask.js"></script>
-<script src="bower_components/owlcarousel/owl-carousel/owl.carousel.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <!--endbower-->
 <!--endbulid-->
 
@@ -19,9 +19,14 @@
             items: 1,
             loop: true,
             navigation: true,
-            dots: true,
+            nav: true,
             mouseDrag: true,
-            autoHeight: true
+            autoHeight: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
         });
     });
     $(document).ready(function() {
@@ -30,8 +35,14 @@
             loop: true,
             navigation: false,
             dots: true,
+            nav: false,
             autoHeight: true,
-            mouseDrag: true
+            mouseDrag: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
         });
     });
 </script>

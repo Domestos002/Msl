@@ -1120,7 +1120,6 @@ input:-ms-input-placeholder {
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   left: 0;
-  margin-left: 10px;
 }
 @media screen and (max-width: 767px) {
   .b-you-get__header__icon {
@@ -2371,7 +2370,7 @@ footer {
 }
 
 .b-you-get__inner {
-  padding: 20px 43px;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 620px) {
@@ -2391,10 +2390,6 @@ footer {
 @media screen and (max-width: 1200px) {
   .footer-item {
     margin-bottom: 50px;
-  }
-
-  .footer-content {
-    padding-bottom: 45px !important;
   }
 }
 @media screen and (max-width: 1000px) {

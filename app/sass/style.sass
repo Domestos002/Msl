@@ -38,8 +38,12 @@ input
 
 .container, .content__contacts
     max-width: 1250px
-    min-width: 320px
+    //min-width: 320px
     margin: 0 auto
+    -webkit-box-sizing: border-box !important
+    -moz-box-sizing: border-box !important
+    box-sizing: border-box !important
+
 
 .content__contacts > .container
     padding: 0
@@ -536,18 +540,21 @@ input
         position: relative
         line-height: 1.1em
         &:after
-            content: ''
+            content: ""
             display: block
             position: absolute
             z-index: 10
-            left: 100%
-            bottom: calc(50% - 8px)
-            width: 15px
-            height: 15px
+            left: 114%
+            bottom: calc(50% - 9px)
+            width: 12px
+            height: 12px
             border: 2px solid transparent
-            border-bottom: 2px solid $red
-            border-right: 2px solid $red
+            border-bottom: 2px solid #ef4035
+            border-right: 2px solid #ef4035
+            -webkit-transform: rotate(-45deg)
+            -ms-transform: rotate(-45deg)
             transform: rotate(-45deg)
+
     & > .green_btn
         height: 45px
         width: 190px
@@ -564,15 +571,15 @@ input
             content: ""
             position: absolute
             display: block
-            top: 20px
+            top: 16px
             right: 0
             left: 0
-            bottom: 0
+            bottom: -25px
             background-color: $blue
             color: #fff
 
 .scheme-of-work-icon
-    margin-bottom: 20px
+    margin-bottom: 10px
     height: 65px
 
 .scheme-of-work__item__list
@@ -895,7 +902,7 @@ footer
     position: relative
 
 .cav-icon
-    +sprite(cav)
+    +sprite(beau)
     //erghtrty
     display: inline-block
 
@@ -1163,6 +1170,8 @@ footer
     font-size: 18px
     font-weight: 400
     padding: 23px 51px 20px 44px
-
+.ml00
+    margin-left: 0 !important
 @import _responsive.sass
 @import _new_styles.sass
+

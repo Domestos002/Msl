@@ -15,6 +15,30 @@
     footer > .container
         padding: 20px 0
 
+@media screen and (max-width: 1180px)
+    .scheme-of-work__item
+        & > .page-title
+            margin-bottom: 18px
+            position: relative
+            line-height: 1.1em
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                z-index: 10
+                left: 100%
+                bottom: calc(50% - 8px)
+                width: 15px
+                height: 15px
+                border: 2px solid transparent
+                border-bottom: 2px solid $red
+                border-right: 2px solid $red
+                transform: rotate(-45deg)
+
+@media screen and (max-width: 590px)
+    .footer-item
+        margin-bottom: 0 !important
+
 @media screen and (max-width: 930px)
     .footer-item.line
         border: none
@@ -115,6 +139,8 @@
         margin-bottom: 50px
 
 @media screen and (max-width: 700px)
+    header
+        background-color: $blue !important
     .header-nav__right
         display: none
 
@@ -125,7 +151,8 @@
         flex-direction: column
         padding: 0 15px
         margin-bottom: 20px
-
+    .content__contacts__info
+        padding: 0 !important
     .content__contacts__info
         .page-title
             margin-bottom: 10px
@@ -147,7 +174,19 @@
     .person > .img
         margin-bottom: 10px
 
+@media screen and (max-width: 330px)
+    .get-consultation-form__inp
+        flex: 0 0 290px
+
+@media screen and (max-width: 769px)
+    .our-clients .page-title
+        margin-bottom: 30px !important
+    .our-clients .b-page-title
+        margin-bottom: 30px !important
 @media screen and (max-width: 710px)
+    .you-get > .container
+        padding-top: 10px !important
+        padding-bottom: 10px !important
     .our-projects > .container
         padding-top: 10px !important
         padding-bottom: 10px !important
@@ -279,10 +318,15 @@
     .first-screen-buttons
         flex-direction: column
 
+@media screen and (max-width: 529px)
+    .get-consultation-form
+        margin-bottom: 50px
+        padding-bottom: 74px
+
 @media screen and (max-width: 650px)
     .get-consultation-form
+        margin-bottom: 0
         flex-wrap: wrap
-        padding-bottom: 74px
     .get-consultation > .container
         padding-bottom: 10px
         padding-top: 10px
@@ -329,6 +373,8 @@
         margin-bottom: 20px
 
 @media screen and (max-width: 620px)
+    .b-main-slider-wrapper
+        width: 100%
     .scheme-of-work__list
         flex-direction: column
         align-items: center
@@ -339,6 +385,7 @@
     .lllast
         width: 100% !important
     .scheme-of-work__item
+        margin-left: 0
         margin-bottom: 45px
         padding-bottom: 45px
         &:after
@@ -346,9 +393,10 @@
             display: block
             position: absolute
             z-index: 10
-            left: 47%
-            top: 100%
+            left: 50%
+            top: 95%
             width: 15px
+            margin-left: -10px
             height: 15px
             border: 2px solid transparent
             border-bottom: 2px solid $red

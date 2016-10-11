@@ -63,6 +63,10 @@
   line-height: 28px;
 }
 
+.lh1-65 {
+  line-height: 1.65em !important;
+}
+
 .ffR-r {
   font-family: "Roboto-Regular";
 }
@@ -108,6 +112,18 @@
 
 a.tdn:not(.no-hover):hover {
   text-decoration: underline !important;
+}
+
+.pl24 {
+  padding-left: 24px;
+}
+
+.lh1-6 {
+  line-height: 1.6em;
+}
+
+.mb70 {
+  margin-bottom: 70px;
 }
 
 .top99per {
@@ -160,6 +176,30 @@ a.tdn:not(.no-hover):hover {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+.mb37 {
+  margin-bottom: 37px;
+}
+
+.mb23 {
+  margin-bottom: 23px;
+}
+
+.mb94 {
+  margin-bottom: 94px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.mb62 {
+  margin-bottom: 62px;
 }
 
 .mb20 {
@@ -835,7 +875,7 @@ input:-ms-input-placeholder {
 }
 
 .first-screen {
-  background-image: url('../images/first-screen.png?1476165657');
+  background-image: url('../images/first-screen.png?1475567949');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -845,7 +885,7 @@ input:-ms-input-placeholder {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../images/first-screen@2x.png?1476165657');
+    background-image: url('../images/first-screen@2x.png?1475584936');
     background-size: cover;
   }
 }
@@ -908,7 +948,7 @@ input:-ms-input-placeholder {
 }
 
 .advantages-list {
-  padding: 75px;
+  padding: 68px 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -928,9 +968,9 @@ input:-ms-input-placeholder {
 }
 
 .advantages-item {
-  -webkit-flex: 0 0 270px;
-  -ms-flex: 0 0 270px;
-  flex: 0 0 270px;
+  -webkit-flex: 0 0 260px;
+  -ms-flex: 0 0 260px;
+  flex: 0 0 260px;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -942,6 +982,10 @@ input:-ms-input-placeholder {
   height: 2px;
   width: 37px;
   background-color: #0692da;
+}
+
+.advantages > .container {
+  max-width: 1125px;
 }
 
 .w-circle {
@@ -979,7 +1023,7 @@ input:-ms-input-placeholder {
   padding: 6px 0;
 }
 .you-get > .container {
-  padding-bottom: 88px;
+  padding: 70px 0 !important;
   max-width: 1170px;
 }
 
@@ -1280,6 +1324,8 @@ input:-ms-input-placeholder {
 }
 
 .scheme-of-work__list {
+  margin: 0 auto;
+  max-width: 1136px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1303,7 +1349,7 @@ input:-ms-input-placeholder {
   display: none;
 }
 .scheme-of-work__item > .page-title {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   position: relative;
   line-height: 1.1em;
 }
@@ -1358,7 +1404,7 @@ input:-ms-input-placeholder {
 }
 
 .scheme-of-work > .container {
-  padding: 85px 54px;
+  padding: 81px 0;
 }
 
 .content__contacts {
@@ -1367,13 +1413,13 @@ input:-ms-input-placeholder {
 }
 
 .our-clients > .container > .b-page-title {
-  padding-left: 100px;
-  padding-top: 45px;
+  padding-left: 25px;
+  padding-top: 0;
 }
 
 .content__contacts__info {
   background: linear-gradient(to bottom, #f7f7f7 25px, #fff);
-  padding: 5% 4% !important;
+  padding: 5.4% 5.4% 6.6% 5.6% !important;
   width: 58%;
   box-sizing: border-box;
 }
@@ -1520,7 +1566,7 @@ footer > .container {
 }
 
 .calculation-of-income {
-  background-image: url('../images/calculation-of-income.png?1476165657');
+  background-image: url('../images/calculation-of-income.png?1475568379');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1528,12 +1574,12 @@ footer > .container {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .calculation-of-income {
-    background-image: url('../images/calculation-of-income@2x.png?1476165657');
+    background-image: url('../images/calculation-of-income@2x.png?1475661555');
     background-size: cover;
   }
 }
 .calculation-of-income > .container {
-  max-width: 1000px;
+  max-width: 1006px;
 }
 
 .b-calculation-of-income {
@@ -1546,14 +1592,14 @@ footer > .container {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 7%;
+  bottom: 8%;
   content: "";
   display: block;
   background-color: #fff;
 }
 .b-calculation-of-income:after {
   height: 9px;
-  width: 50%;
+  width: 42%;
   right: 50%;
   position: absolute;
   bottom: 100%;
@@ -1623,7 +1669,7 @@ footer > .container {
 .our-projects__main-slider .owl-dots {
   position: absolute;
   top: 100%;
-  margin-top: 75px;
+  margin-top: 23px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -1649,12 +1695,13 @@ footer > .container {
 }
 
 .b-our-project-info {
+  padding: 36px 0;
   float: right;
-  width: 55%;
+  width: 57%;
 }
 
 .our-projects-content > .container {
-  padding: 67px 85px 67px 45px;
+  padding: 71px 93px 71px 20px;
 }
 
 .b-our-project-title > .title-lev2 > p {
@@ -1663,7 +1710,7 @@ footer > .container {
 
 .b-our-project-title {
   border-bottom: 1px solid #e2e2e2;
-  padding-bottom: 30px;
+  padding-bottom: 21px;
 }
 
 .b-our-projects__result-list {
@@ -2096,7 +2143,7 @@ footer {
 }
 
 .our-clients > .container > .b-page-title {
-  margin-bottom: 10%;
+  margin-bottom: 12%;
 }
 
 .b-our-clients-right {
@@ -2139,7 +2186,7 @@ footer {
 }
 
 .get-consultation-right {
-  width: 55%;
+  width: 58%;
 }
 
 .get-consultation-form {
@@ -2148,7 +2195,7 @@ footer {
 
 .get-consultation > .container {
   box-sizing: border-box;
-  padding: 75px 110px 75px 130px;
+  padding: 68px 94px 68px 112px;
 }
 
 .get-consultation-form__inp {

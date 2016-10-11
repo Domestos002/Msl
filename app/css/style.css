@@ -1100,7 +1100,7 @@ input:-ms-input-placeholder {
   padding: 20px;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 920px) {
   .b-you-get {
     width: 100%;
     margin-bottom: 30px;
@@ -1121,7 +1121,7 @@ input:-ms-input-placeholder {
   -o-transform: translateY(-50%);
   left: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 920px) {
   .b-you-get__header__icon {
     position: static;
     width: 100%;
@@ -1151,7 +1151,7 @@ input:-ms-input-placeholder {
 
 .b-you-get__header {
   position: relative;
-  padding: 25px 15px 25px 129px;
+  padding: 25px 0px 25px 119px;
 }
 .b-you-get__header:after {
   content: "";
@@ -1163,7 +1163,7 @@ input:-ms-input-placeholder {
   background-color: #0692da;
   width: calc(100% - 120px + 22px);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 920px) {
   .b-you-get__header {
     padding-left: 0;
     text-align: center;

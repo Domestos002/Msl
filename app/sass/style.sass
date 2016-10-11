@@ -272,9 +272,14 @@ input
     background-size: cover
     background-repeat: no-repeat
     & > .container
-        padding: 25% 10% !important
-    height: 100vh
-    min-height: 400px
+        padding: 160px 15px 100px !important
+        vertical-align: middle
+        display: inline-block
+        line-height: normal
+    //height: 100vh
+    min-height: 100vh
+    line-height: 100vh
+    text-align: center
 
 .first-screen-bullets
     display: flex
@@ -360,12 +365,13 @@ input
 
 .you-get
     background-color: $darker-white
-    padding: 6px 35px
+    padding: 6px 0
     & > .container
-        padding: 35px 15px
+        //padding: 35px 15px
         padding-bottom: 88px
+        max-width: 1170px
     & > .container >.clearfix
-        padding: 0 40px
+        //padding: 0 40px
 
 .target-icon
     +sprite(target-icon)
@@ -457,7 +463,7 @@ input
 
 .b-you-get__header
     position: relative
-    padding: 25px 15px 25px 129px
+    padding: 25px 15px 25px 120px
     &:after
         content: ''
         display: block
@@ -1007,6 +1013,10 @@ footer
     align-items: center
     justify-content: center
     background-color: $blue
+    +trans
+    
+    &:hover
+        background: $blue*0.8
 
 .commercial-proposal__link
     padding-top: 37px
@@ -1060,7 +1070,7 @@ footer
     right: 100%
     +trans()
     &.active
-        right: 0%
+        right: 0
         overflow: auto
 
 .sliding-panel-link:after
@@ -1068,7 +1078,6 @@ footer
     content: ''
     position: absolute
     display: block
-    top: 70px
     right: 21px
     top: 50%
     +transform(translateY(-50%))
@@ -1078,7 +1087,6 @@ footer
     content: ''
     position: absolute
     display: block
-    top: 70px
     right: 21px
     top: 50%
     +transform(translateY(-50%))
@@ -1147,8 +1155,5 @@ footer
     font-weight: 400
     padding: 23px 51px 20px 44px
 
-
-.b-you-get__inner
-    padding: 0 20px
 @import _responsive.sass
 @import _new_styles.sass

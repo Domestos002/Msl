@@ -827,21 +827,25 @@ input:-ms-input-placeholder {
 }
 
 .first-screen {
-  background-image: url('../images/first-screen.png?1475567949');
+  background-image: url('../images/first-screen.png?1475584111');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  min-height: 400px;
+  min-height: 100vh;
+  line-height: 100vh;
+  text-align: center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../images/first-screen@2x.png?1475584936');
+    background-image: url('../images/first-screen@2x.png?1475841819');
     background-size: cover;
   }
 }
 .first-screen > .container {
-  padding: 25% 10% !important;
+  padding: 160px 15px 100px !important;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: normal;
 }
 
 .first-screen-bullets {
@@ -964,14 +968,11 @@ input:-ms-input-placeholder {
 
 .you-get {
   background-color: #f6f6f6;
-  padding: 6px 35px;
+  padding: 6px 0;
 }
 .you-get > .container {
-  padding: 35px 15px;
   padding-bottom: 88px;
-}
-.you-get > .container > .clearfix {
-  padding: 0 40px;
+  max-width: 1170px;
 }
 
 .target-icon {
@@ -1151,7 +1152,7 @@ input:-ms-input-placeholder {
 
 .b-you-get__header {
   position: relative;
-  padding: 25px 15px 25px 129px;
+  padding: 25px 15px 25px 120px;
 }
 .b-you-get__header:after {
   content: "";
@@ -1511,7 +1512,7 @@ footer > .container {
 }
 
 .calculation-of-income {
-  background-image: url('../images/calculation-of-income.png?1475568379');
+  background-image: url('../images/calculation-of-income.png?1475841819');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1519,7 +1520,7 @@ footer > .container {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .calculation-of-income {
-    background-image: url('../images/calculation-of-income@2x.png?1475661555');
+    background-image: url('../images/calculation-of-income@2x.png?1475841819');
     background-size: cover;
   }
 }
@@ -1611,12 +1612,28 @@ footer > .container {
 .our-projects__main-slider.b-main-slider {
   padding-bottom: 0;
 }
-.our-projects__main-slider .owl-pagination {
+.our-projects__main-slider .owl-dots {
   position: absolute;
   top: 100%;
   margin-top: 75px;
   left: 0;
   width: 100%;
+  text-align: center;
+}
+
+.infobubble__content {
+  line-height: normal;
+}
+
+.infobubble__small-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.infobubble__big-text {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .our-projects > .container {
@@ -1685,7 +1702,7 @@ footer > .container {
   text-align: center;
 }
 
-.owl-pagination {
+.owl-dots {
   display: inline-block;
 }
 
@@ -1743,7 +1760,7 @@ footer > .container {
   transform: rotate(-45deg);
 }
 
-.owl-page {
+.owl-dot {
   display: inline-block;
   background-color: #d3d3d3;
   width: 13px;
@@ -1751,7 +1768,7 @@ footer > .container {
   border-radius: 50%;
   margin-right: 8px;
 }
-.owl-page.active {
+.owl-dot.active {
   background-color: #e84429;
 }
 
@@ -2085,7 +2102,7 @@ footer {
   padding: 67px 75px 67px 75px;
 }
 
-.clients-slider > .owl-controls > .owl-pagination > .owl-page {
+.clients-slider > .owl-dots > .owl-dot {
   width: 10px;
   height: 10px;
   margin-right: 10px;
@@ -2174,6 +2191,14 @@ footer {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #0692da;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+}
+.commercial-proposal:hover {
+  background: #0575ae;
 }
 
 .commercial-proposal__link {
@@ -2252,7 +2277,7 @@ footer {
   -ms-transition: all 0.3s ease 0s;
 }
 .sliding-panel.active {
-  right: 0%;
+  right: 0;
   overflow: auto;
 }
 
@@ -2265,7 +2290,6 @@ footer {
   content: "";
   position: absolute;
   display: block;
-  top: 70px;
   right: 21px;
   top: 50%;
   transform: translateY(-50%);
@@ -2284,7 +2308,6 @@ footer {
   content: "";
   position: absolute;
   display: block;
-  top: 70px;
   right: 21px;
   top: 50%;
   transform: translateY(-50%);
@@ -2367,10 +2390,6 @@ footer {
   font-size: 18px;
   font-weight: 400;
   padding: 23px 51px 20px 44px;
-}
-
-.b-you-get__inner {
-  padding: 0 20px;
 }
 
 @media screen and (max-width: 620px) {

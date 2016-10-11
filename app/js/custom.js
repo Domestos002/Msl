@@ -31,8 +31,9 @@ $(document).ready(function () {
         }, 200);
     });
 
-    $(document).on("click", '.sliding-panel-item', function(e) {
+    $(document).on("click", 'sliding-panel-item', function(e) {
         $('.sliding-panel').removeClass('active');
+        $('body').removeClass('ovh');
         e.preventDefault();
     });
 
@@ -57,7 +58,7 @@ $(function() {
                     scrollTop: target.offset().top
                 }, 1000);
                 return false;
-            }2
+            }
         }
     });
 });

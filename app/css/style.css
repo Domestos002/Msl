@@ -164,6 +164,12 @@ a.tdn:not(.no-hover):hover {
   margin-right: 20px;
 }
 
+.fxd-c {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .fi-bb {
   border-bottom: 1px solid #76767b;
 }
@@ -482,6 +488,23 @@ input:-ms-input-placeholder {
   opacity: 1 !important;
 }
 
+.popup input {
+  height: 100%;
+  width: 100%;
+}
+
+.b-popup-form {
+  margin-bottom: 20px;
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 14px;
+}
+
+.popup-input-wrapper {
+  padding-top: 10px;
+  height: 40px;
+  width: 235px;
+}
+
 .container, .content__contacts {
   max-width: 1250px;
   margin: 0 auto;
@@ -503,6 +526,14 @@ input:-ms-input-placeholder {
 
 #land-map {
   height: 532px;
+}
+
+.popup-form {
+  display: inline-block;
+  width: 500px;
+  background-color: #fff;
+  z-index: 600;
+  position: relative;
 }
 
 .base-text, .b-base-text > p {
@@ -595,9 +626,9 @@ input:-ms-input-placeholder {
 }
 
 .header-nav {
-  -webkit-flex: 1 1 440px;
-  -ms-flex: 1 1 440px;
-  flex: 1 1 440px;
+  -webkit-flex: 0 1 540px;
+  -ms-flex: 0 1 540px;
+  flex: 0 1 540px;
 }
 
 .burger {
@@ -704,7 +735,7 @@ input:-ms-input-placeholder {
 }
 
 .header-nav__item {
-  padding: 0 10px;
+  padding: 0 25px;
   list-style: none;
   background-color: #fff;
   box-sizing: border-box;
@@ -728,9 +759,9 @@ input:-ms-input-placeholder {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .header-nav__right {
@@ -2455,6 +2486,34 @@ footer {
 
 .ml00 {
   margin-left: 0 !important;
+}
+
+.overlay {
+  z-index: 400;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.popup {
+  z-index: 600;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: inline-block;
+  vertical-align: middle;
+}
+.popup:before {
+  width: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 620px) {

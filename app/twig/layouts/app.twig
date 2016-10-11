@@ -11,7 +11,23 @@
 
     {% include "stylesheets.twig" %}
 </head>
+
 <body>
+
+<div class="popup hidden">
+    <div class="overlay"></div>
+    <form action="#" class="popup-form">
+        <div class="b-popup-form fxd-c mr20">
+            <label>Фамилия:</label>
+            <div class="popup-input-wrapper"><input type="text"></div>
+        </div>
+        <div class="b-popup-form fxd-c mb20">
+            <label>Имя:</label>
+            <div class="popup-input-wrapper"><input type="text"></div>
+        </div>
+        <button href="#" class="green_btn">Отправить <i class="r-arrow-icon ml20"></i></button>
+    </form>
+</div>
 <div class="site-wrapper">
     <!-- Header block -->
     {% include "header.twig" %}

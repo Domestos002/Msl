@@ -32,6 +32,11 @@ $(document).ready(function () {
         }, 200);
     });
 
+    $(document).on("click", '.green_btn-header', function (e) {
+        $('.popup').fadeIn(400);
+        e.preventDefault();
+    });
+
     $(document).on("click", '.sliding-panel__close', function (e) {
         $('.sliding-panel').toggleClass('active');
         $('body').removeClass('ovh');

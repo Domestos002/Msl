@@ -2716,6 +2716,16 @@ footer {
   }
 }
 @media screen and (max-width: 710px) {
+  .content__contacts__info {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .you-get > .container {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
   .our-projects > .container {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
@@ -2944,12 +2954,18 @@ footer {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 529px) {
+  .get-consultation-form {
+    margin-bottom: 50px;
+    padding-bottom: 74px;
+  }
+}
 @media screen and (max-width: 650px) {
   .get-consultation-form {
+    margin-bottom: 0;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-bottom: 74px;
   }
 
   .get-consultation > .container {

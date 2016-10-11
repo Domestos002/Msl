@@ -64,6 +64,11 @@ $(function() {
     });
 });
 
+
+
+
+
+
 function what_youll_get() {
     $('.you-get-list').each(function(e){
         var h = 0;

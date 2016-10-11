@@ -497,7 +497,7 @@ input:-ms-input-placeholder {
 }
 
 #land-map {
-  height: 400px;
+  height: 532px;
 }
 
 .base-text, .b-base-text > p {
@@ -1413,7 +1413,7 @@ input:-ms-input-placeholder {
 }
 
 .our-clients > .container > .b-page-title {
-  padding-left: 25px;
+  padding-left: 10px;
   padding-top: 0;
 }
 
@@ -1538,6 +1538,7 @@ footer {
 }
 
 footer > .container {
+  max-width: 1180px;
   padding: 75px 15px;
   text-align: justify;
   box-sizing: border-box;
@@ -2143,7 +2144,7 @@ footer {
 }
 
 .our-clients > .container > .b-page-title {
-  margin-bottom: 12%;
+  margin-bottom: 9%;
 }
 
 .b-our-clients-right {
@@ -2154,7 +2155,7 @@ footer {
   background-color: #f6f6f6;
 }
 .our-clients > .container {
-  padding: 67px 75px 67px 75px;
+  padding: 50px 75px 50px 90px;
 }
 
 .clients-slider > .owl-dots > .owl-dot {

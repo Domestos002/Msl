@@ -152,12 +152,19 @@ gulp.task('clean', function(){
 /* BUILD -------------------------------------------------------------------- */
 gulp.task('build',["clean"], function(){
     setTimeout(function () {
-        return gulp.src(sources.html.src)
+        gulp.src(sources.html.src)
             .pipe(useref())
             .pipe(gulpif('*.js', uglify()))
             .pipe(gulpif('*.css', minifyCss()))
             .pipe(useref())
             .pipe(gulp.dest('dist'));
+
+        gulp.src("app/fonts/**/*")
+            .pipe(gulp.dest('dist/fonts'));
+
+        gulp.src("app/images/**/*")
+            .pipe(gulp.dest('dist/images'));
+
     }, 500);
 });
 

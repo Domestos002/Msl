@@ -32,7 +32,8 @@ $(document).ready(function () {
     });
 
     $(document).on("click", '.sliding-panel__close', function(e) {
-        $('.sliding-panel').removeClass('active');
+        $('.sliding-panel').toggleClass('active');
+        $('body').removeClass('ovh');
         e.preventDefault();
     });
 

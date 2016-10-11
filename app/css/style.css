@@ -484,8 +484,8 @@ input:-ms-input-placeholder {
 
 .container, .content__contacts {
   max-width: 1250px;
-  min-width: 320px;
   margin: 0 auto;
+  box-sizing: border-box !important;
 }
 
 .content__contacts > .container {

@@ -2500,6 +2500,11 @@ footer {
     transform: rotate(-45deg);
   }
 }
+@media screen and (max-width: 590px) {
+  .footer-item {
+    margin-bottom: 0 !important;
+  }
+}
 @media screen and (max-width: 930px) {
   .footer-item.line {
     border: none;
@@ -2664,6 +2669,10 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  header {
+    background-color: #0692da !important;
+  }
+
   .header-nav__right {
     display: none;
   }

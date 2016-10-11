@@ -160,6 +160,9 @@ input
     width: 67px
     cursor: pointer
     +trans
+    &:hover
+        background-color: $blue*0.8
+        +trans
 
 .burger__stripes
     position: relative
@@ -996,7 +999,7 @@ footer
 .get-consultation-form__inp
     font-family: $ffHel-r
     height: 100%
-    flex: 0 0 300px
+    flex: 1 0 300px
 
 .get-consultation-form > button
     flex: 0 0 195px
@@ -1058,7 +1061,7 @@ footer
         +transform(translateY(-50%) rotate(-45deg))
 
 .sliding-panel
-    z-index: 100
+    z-index: 900
     overflow: auto
     min-width: 320px
     position: fixed

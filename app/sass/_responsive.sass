@@ -15,6 +15,26 @@
     footer > .container
         padding: 20px 0
 
+@media screen and (max-width: 1180px)
+    .scheme-of-work__item
+        & > .page-title
+            margin-bottom: 18px
+            position: relative
+            line-height: 1.1em
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                z-index: 10
+                left: 100%
+                bottom: calc(50% - 8px)
+                width: 15px
+                height: 15px
+                border: 2px solid transparent
+                border-bottom: 2px solid $red
+                border-right: 2px solid $red
+                transform: rotate(-45deg)
+
 @media screen and (max-width: 930px)
     .footer-item.line
         border: none

@@ -1363,10 +1363,10 @@ input:-ms-input-placeholder {
   display: block;
   position: absolute;
   z-index: 10;
-  left: 100%;
-  bottom: calc(50% - 8px);
-  width: 15px;
-  height: 15px;
+  left: 114%;
+  bottom: calc(50% - 9px);
+  width: 12px;
+  height: 12px;
   border: 2px solid transparent;
   border-bottom: 2px solid #ef4035;
   border-right: 2px solid #ef4035;
@@ -1385,16 +1385,16 @@ input:-ms-input-placeholder {
   content: "";
   position: absolute;
   display: block;
-  top: 20px;
+  top: 16px;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: -25px;
   background-color: #0692da;
   color: #fff;
 }
 
 .scheme-of-work-icon {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   height: 65px;
 }
 
@@ -2475,6 +2475,29 @@ footer {
 @media screen and (max-width: 1000px) {
   footer > .container {
     padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .scheme-of-work__item > .page-title {
+    margin-bottom: 18px;
+    position: relative;
+    line-height: 1.1em;
+  }
+  .scheme-of-work__item > .page-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 100%;
+    bottom: calc(50% - 8px);
+    width: 15px;
+    height: 15px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #ef4035;
+    border-right: 2px solid #ef4035;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 @media screen and (max-width: 930px) {
